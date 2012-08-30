@@ -113,7 +113,7 @@ if (file.exists("testResults.save")) {
 if (is.null(test.results[[version]])) test.results[[version]] <- list()
 
 #Test a simple theta/tau model
-dm <- dm.createDemographicModel(sampleSizes=c(24,25),nLoci=100,seqLength=1000)
+dm <- dm.createDemographicModel(c(24,25), 100)
 dm <- dm.addSpeciationEvent(dm,0.001,5)
 dm <- dm.addMutation(dm,1,20)
 dm <- dm.addRecombination(dm,fixed=20)
