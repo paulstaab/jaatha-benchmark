@@ -1,1 +1,1 @@
-nice ./test_jaatha.R
+nohup nice ./test_jaatha.R >> output.log &
