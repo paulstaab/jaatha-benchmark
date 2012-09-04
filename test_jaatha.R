@@ -118,7 +118,7 @@ dm <- dm.addSpeciationEvent(dm,0.001,5)
 dm <- dm.addMutation(dm,1,20)
 dm <- dm.addRecombination(dm,fixed=20)
 dm <- dm.addSymmetricMigration(dm,fixed=.5)
-test.results[[version]][['TauTheta']]  <- runTest(dm, 8)
+test.results[[version]][['TauTheta']]  <- runTest(dm, 5)
 
 #Test a model with 4 parameters
 dm.mg <- dm.createDemographicModel(c(20,25), 100)
@@ -127,6 +127,6 @@ dm.mg <- dm.addMutation(dm.mg,1,20)
 dm.mg <- dm.addSymmetricMigration(dm.mg, .1, 5)
 dm.mg <- dm.addGrowth(dm.mg, .1, 5, population=2)
 dm.mg <- dm.addRecombination(dm.mg, fixed=20)
-test.results[[version]][['MigGrowth']]  <- runTest(dm, 4)
+test.results[[version]][['MigGrowth']]  <- runTest(dm.mg, 3)
 
 save(test.results, file="testResults.save")
