@@ -5,7 +5,7 @@
 # 
 # Author:   Paul R. Staab 
 # Email:    staab (at) bio.lmu.de
-# Date:     2012-08-27
+# Date:     2012-09-05
 # Licence:  GPLv3 or later
 #
 
@@ -17,31 +17,35 @@ if ("compiler" %in% rownames(installed.packages())){
   invisible(compiler::enableJIT(3))
 }
 
-load("./testResults.save")
-if (!exists("test.results")) stop("No results found!")
+res.version <- c()
+res.model   <- c()
+res.mse     <- c()
+res.run.time <- c()
 
-calc.mse <- function(test.results) {
-  res.version <- c()
-  res.model   <- c()
-  res.mse     <- c()
-  res.run.time <- c()
+versions <- list.dirs("results", recursive=F)
+for (version in versions) {
+  version.name <- list.dirs()
+  models <- list.dirs(version, recursive=F)
+  for (model in models) {
+    estimates <- read.table(paste(model, "/estimates.txt", sep=""), header=T)
+    true.values <- read.table(paste(model, "/true_values.txt", sep=""), header=T)
+    run.times <- read.table(paste(model, "/runtimes.txt", sep=""), header=T)
 
-  for (i in seq(along = test.results)){
-    version <- names(test.results)[i]
-    for (j in seq(along = test.results[[i]])) {
-      model <- names(test.results[[i]])[j]
-      current.result <- test.results[[i]][[j]]
-      mse <- mean((current.result$RealPars - current.result$Estimates)^2)
-      avg.run.time <- mean(current.result$RunTimes[ ,8])
-      res.version <- c(res.version, version)
-      res.model   <- c(res.model, model)
-      res.mse     <- c(res.mse, mse)
-      res.run.time <- c(res.run.time, avg.run.time)
-    }
+    mse <- mean((estimates - true.values)^2)
+    avg.run.time <- mean(run.times[, 3] + run.times[,6])
+    version <- strsplit(models, "/")[[1]][2]
+    model <- strsplit(models, "/")[[1]][3]
+
+    res.version <- c(res.version, version)
+    res.model   <- c(res.model, model)
+    res.mse     <- c(res.mse, mse)
+    res.run.time <- c(res.run.time, avg.run.time)
   }
-
-  return(data.frame(version=res.version, model=res.model, 
-                    mse=res.mse, avg.run.time=res.run.time))
 }
 
-calc.mse(test.results)
+result <- data.frame(Version=res.version, 
+           Model=res.model,
+           MSE=res.mse,
+           Run.Time=res.run.time )
+
+result
