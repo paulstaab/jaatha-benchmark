@@ -67,8 +67,6 @@ runTest <- function(dm, n.points=5, seed=12523, model){
       return(c(runtimes, estimates))
   }
 
-  print(results)
-
   estimates <- results[, -(1:6)]
   runtimes <- results[, 1:6]
 
