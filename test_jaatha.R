@@ -49,7 +49,7 @@ runTest <- function(dm, n.points=5, seed=12523, model){
 
       runtimes <- rep(0, 6)
       names(runtimes) <-
-        c('init.self','init.elapsed','init.child','ref.self','ref.elapsed','ref.child')
+        c('init.user','init.system','init.elapsed','ref.user','ref.system','ref.elapsed')
 
       runtimes[1:3] <- system.time(
         startPoints <- Jaatha.initialSearch(jaatha,nSim=200,nBlocksPerPar=4)
