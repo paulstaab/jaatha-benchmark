@@ -16,6 +16,7 @@ cat("Testing version",version,"of Jaatha\n")
 args <- commandArgs(TRUE)
 if (is.na(args[1])) args[1] <- 1
 threads <- as.numeric(args[1])
+cat("Using", threads, "Cores\n")
 
 registerDoMC(threads)
 
@@ -136,7 +137,7 @@ dm <- dm.addSpeciationEvent(dm,0.001,5)
 dm <- dm.addMutation(dm,1,20)
 dm <- dm.addRecombination(dm,fixed=20)
 dm <- dm.addSymmetricMigration(dm,fixed=.5)
-runTest(dm, 2, model="tt")
+runTest(dm, 5, model="tt")
 
 #Test a model with 4 parameters
 dm.mg <- dm.createDemographicModel(c(20,25), 100)
@@ -146,5 +147,3 @@ dm.mg <- dm.addSymmetricMigration(dm.mg, .1, 5)
 dm.mg <- dm.addGrowth(dm.mg, .1, 5, population=2)
 dm.mg <- dm.addRecombination(dm.mg, fixed=20)
 runTest(dm.mg, 3, model="mg")
-
-#save(test.results, file="testResults.save")
