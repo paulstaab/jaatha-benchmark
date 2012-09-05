@@ -4,12 +4,22 @@
 # a simple theta/tau model
 
 library(jaatha)
+library(foreach)
+library(doMC)
+
+result.folder <- "results"
 
 version <- as.character(packageVersion("jaatha"))
 
 cat("Testing version",version,"of Jaatha\n")
 
-runTest <- function(dm, n.points=5, seed=12542){
+args <- commandArgs(TRUE)
+if (is.na(args[1])) args[1] <- 1
+threads <- as.numeric(args[1])
+
+registerDoMC(threads)
+
+runTest <- function(dm, n.points=5, seed=12523, model){
   set.seed(seed)
 
   par.grid <- CreateParGrid(dm, n.points)
@@ -18,41 +28,51 @@ runTest <- function(dm, n.points=5, seed=12542){
   sumStats <- dm.simSumStats(dm,par.grid)
 
   n <- dim(par.grid)[1]
+  seeds <- sample.int(2^20, n)
 
-  testResults <- list()
-  testResults[['RealPars']] <- par.grid
 
-  estimates <- matrix(0,n,dim(par.grid)[2])
-  runtimes <- matrix(0,n,10)
-  colnames(runtimes) <-
-    c('init.user.self','init.sys.self','init.elapsed','init.user.child','init.sys.child',
-      'ref.user.self','ref.sys.self','ref.elapsed','ref.user.child','ref.sys.child')
+  folder <- paste("results", "/", version, "/", model, "/", sep="")
+  log.folder <- paste("logs", "/", version, "/", model, "/", sep="")
+  dir.create(folder, recursive=T, showWarnings=F)
+  dir.create(log.folder, recursive=T, showWarnings=F)
 
-  for (i in 1:n){
+  results <- foreach(i=1:n, .combine=rbind) %dopar% { 
+      cat("Run",i,"of",n,"\n")
+      sink(file=paste(log.folder, "run_", i, ".txt", sep=""))
+      set.seed(seeds[i])
       cat("----------------------------------------------------------------------\n")
       cat("Run",i,"of",n,"\n")
       cat("Real parameters:",par.grid[i,],"\n")
       cat("----------------------------------------------------------------------\n")
       jaatha <- Jaatha.initialize(dm, sumStats[i,])
 
-      runtimes[i,1:5] <- system.time(
-        startPoints <- Jaatha.initialSearch(jaatha,nSim=400,nBlocksPerPar=4)
+      runtimes <- rep(0, 6)
+      names(runtimes) <-
+        c('init.self','init.elapsed','init.child','ref.self','ref.elapsed','ref.child')
+
+      runtimes[1:3] <- system.time(
+        startPoints <- Jaatha.initialSearch(jaatha,nSim=200,nBlocksPerPar=4)
       )
       startPoints <- Jaatha.pickBestStartPoints(startPoints,best=2)
 
-      runtimes[i,6:10] <- system.time(
+      runtimes[4:6] <- system.time(
         jaatha <- Jaatha.refineSearch(jaatha,startPoints,nSim=400,
                                     epsilon=.2,nFinalSim=200,
                                     halfBlockSize=0.05,weight=.9,
                                     nMaxStep=200)
       )
-      estimates[i,] <- Jaatha.printLikelihoods(jaatha)[1,-(1:2)]
+      estimates <- Jaatha.printLikelihoods(jaatha)[1,-(1:2)]
+      return(c(runtimes, estimates))
   }
 
-  testResults[['Estimates']] <- estimates
-  testResults[['RunTimes']] <- runtimes
+  print(results)
 
-  return(testResults)
+  estimates <- results[, -(1:6)]
+  runtimes <- results[, 1:6]
+
+  write.table(estimates, file=paste(folder, "estimates.txt", sep=""), row.names=F)
+  write.table(par.grid,  file=paste(folder, "true_values.txt", sep=""), row.names=F)
+  write.table(runtimes,  file=paste(folder, "runtimes.txt", sep=""), row.names=F)
 }
 
 evalTest <- function(test.results){
@@ -102,15 +122,13 @@ dm.getParRanges <- function(dm,inklExtTheta=T){
 
 
 
+#if (file.exists("testResults.save")) { 
+#  load("testResults.save")
+#} else { 
+#  test.results <- list() 
+#}
 
-
-if (file.exists("testResults.save")) { 
-  load("testResults.save")
-} else { 
-  test.results <- list() 
-}
-
-if (is.null(test.results[[version]])) test.results[[version]] <- list()
+#if (is.null(test.results[[version]])) test.results[[version]] <- list()
 
 #Test a simple theta/tau model
 dm <- dm.createDemographicModel(c(24,25), 100)
@@ -118,7 +136,7 @@ dm <- dm.addSpeciationEvent(dm,0.001,5)
 dm <- dm.addMutation(dm,1,20)
 dm <- dm.addRecombination(dm,fixed=20)
 dm <- dm.addSymmetricMigration(dm,fixed=.5)
-test.results[[version]][['TauTheta']]  <- runTest(dm, 5)
+runTest(dm, 2, model="tt")
 
 #Test a model with 4 parameters
 dm.mg <- dm.createDemographicModel(c(20,25), 100)
@@ -127,6 +145,6 @@ dm.mg <- dm.addMutation(dm.mg,1,20)
 dm.mg <- dm.addSymmetricMigration(dm.mg, .1, 5)
 dm.mg <- dm.addGrowth(dm.mg, .1, 5, population=2)
 dm.mg <- dm.addRecombination(dm.mg, fixed=20)
-test.results[[version]][['MigGrowth']]  <- runTest(dm.mg, 3)
+runTest(dm.mg, 3, model="mg")
 
-save(test.results, file="testResults.save")
+#save(test.results, file="testResults.save")
