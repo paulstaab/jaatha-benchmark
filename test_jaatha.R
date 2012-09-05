@@ -63,6 +63,7 @@ runTest <- function(dm, n.points=5, seed=12523, model){
                                     nMaxStep=200)
       )
       estimates <- Jaatha.printLikelihoods(jaatha)[1,-(1:2)]
+      sink(NULL)
       return(c(runtimes, estimates))
   }
 
