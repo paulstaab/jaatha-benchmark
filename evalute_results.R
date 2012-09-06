@@ -33,8 +33,8 @@ for (version in versions) {
 
     mse <- mean((estimates - true.values)^2)
     avg.run.time <- mean(run.times[, 3] + run.times[,6])
-    version <- strsplit(models, "/")[[1]][2]
-    model <- strsplit(models, "/")[[1]][3]
+    version <- strsplit(model, "/")[[1]][2]
+    model <- strsplit(model, "/")[[1]][3]
 
     res.version <- c(res.version, version)
     res.model   <- c(res.model, model)
