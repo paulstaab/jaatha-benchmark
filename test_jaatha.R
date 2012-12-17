@@ -15,7 +15,8 @@ if (is.na(args[1])) args[1] <- 1
 threads <- as.numeric(args[1])
 cat("Using", threads, "Cores\n")
 
-registerDoMC(threads)
+registerDoRedis('test_jaatha', host="10.153.163.163")
+startLocalWorkers(n=threads, queue='test_jaatha', host="10.153.163.163")
 
 runTest <- function(dm, n.points=2, seed=12523, model){
   set.seed(seed)
@@ -59,7 +60,7 @@ runTest <- function(dm, n.points=2, seed=12523, model){
                                     nMaxStep=200)
       )
       estimates <- Jaatha.printLikelihoods(jaatha)[1,-(1:2)]
-      sink(NULL)
+      #sink(NULL)
       return(c(runtimes, estimates))
   }
 
