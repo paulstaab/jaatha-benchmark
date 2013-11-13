@@ -4,19 +4,13 @@
 # a simple theta/tau model
 
 library(jaatha)
+library(foreach)
+library(doMC)
 
 result.folder <- "results"
 version <- as.character(packageVersion("jaatha"))
 
 cat("Testing version",version,"of Jaatha\n")
-
-args <- commandArgs(TRUE)
-if (is.na(args[1])) args[1] <- 1
-threads <- as.numeric(args[1])
-cat("Using", threads, "Cores\n")
-
-registerDoRedis('test_jaatha', host="10.153.163.163")
-startLocalWorkers(n=threads, queue='test_jaatha', host="10.153.163.163")
 
 runTest <- function(dm, n.points=2, seed=12523, model){
   set.seed(seed)
@@ -24,7 +18,6 @@ runTest <- function(dm, n.points=2, seed=12523, model){
   par.grid <- CreateParGrid(dm, n.points)
 
   cat("Simulating data...\n")
-  sumStats <- dm.simSumStats(dm,par.grid)
 
   n <- dim(par.grid)[1]
   seeds <- sample.int(2^20, n)
@@ -34,7 +27,9 @@ runTest <- function(dm, n.points=2, seed=12523, model){
   dir.create(folder, recursive=T, showWarnings=F)
   dir.create(log.folder, recursive=T, showWarnings=F)
 
-  results <- foreach(i=1:n, .combine=rbind) %do% { 
+  registerDoMC(32)
+
+  results <- foreach(i=1:n, .combine=rbind) %dopar% { 
       cat("Run",i,"of",n,"\n")
       sink(file=paste(log.folder, "run_", i, ".txt", sep=""))
       set.seed(seeds[i])
@@ -42,25 +37,22 @@ runTest <- function(dm, n.points=2, seed=12523, model){
       cat("Run",i,"of",n,"\n")
       cat("Real parameters:",par.grid[i,],"\n")
       cat("----------------------------------------------------------------------\n")
-      jaatha <- Jaatha.initialize(dm, sumStats[i,], cores=32, sim.package.size=1)
+      jsfs <- dm.simSumStats(dm, par.grid[i, ])
+      jaatha <- Jaatha.initialize(dm, jsfs=jsfs, use.shm=TRUE, cores=1)
 
       runtimes <- rep(0, 6)
       names(runtimes) <-
         c('init.user','init.system','init.elapsed','ref.user','ref.system','ref.elapsed')
 
       runtimes[1:3] <- system.time(
-        startPoints <- Jaatha.initialSearch(jaatha, nSim=100, nBlocksPerPar=3)
+        jaatha <- Jaatha.initialSearch(jaatha, 100, 3)
       )
-      startPoints <- Jaatha.pickBestStartPoints(startPoints, best=3)
 
       runtimes[4:6] <- system.time(
-        jaatha <- Jaatha.refineSearch(jaatha,startPoints,nSim=100,
-                                    epsilon=.2,nFinalSim=100,
-                                    halfBlockSize=0.05,weight=.9,
-                                    nMaxStep=200)
+        jaatha <- Jaatha.refinedSearch(jaatha, 5 , 100, epsilon=2, sim.final=100)
       )
-      estimates <- Jaatha.printLikelihoods(jaatha)[1,-(1:2)]
-      #sink(NULL)
+      estimates <-  Jaatha.getLikelihoods(jaatha)[1,-(1:2)]
+      sink(NULL)
       return(c(runtimes, estimates))
   }
 
@@ -132,14 +124,17 @@ dm <- dm.createDemographicModel(c(24,25), 100)
 dm <- dm.addSpeciationEvent(dm,0.001,5)
 dm <- dm.addMutation(dm,1,20)
 dm <- dm.addRecombination(dm,fixed=20)
-dm <- dm.addSymmetricMigration(dm,fixed=.5)
-runTest(dm, 2, model="tt")
+dm <- dm.addSymmetricMigration(dm, .1, 5)
+runTest(dm, 3, model="tt")
 
-#Test a model with 4 parameters
+#Test a model with 5 parameters
 dm.mg <- dm.createDemographicModel(c(20,25), 100)
 dm.mg <- dm.addSpeciationEvent(dm.mg,.001,5)
 dm.mg <- dm.addMutation(dm.mg,1,20)
-dm.mg <- dm.addSymmetricMigration(dm.mg, .1, 5)
+dm.mg <- dm.addMigration(dm.mg, .1, 5, pop.from=1, pop.to=2,
+                         new.par.name="m12")
+dm.mg <- dm.addMigration(dm.mg, .1, 5, pop.from=2, pop.to=1, 
+                         new.par.name="m21")
 dm.mg <- dm.addGrowth(dm.mg, .1, 5, population=2)
 dm.mg <- dm.addRecombination(dm.mg, fixed=20)
 runTest(dm.mg, 2, model="mg")
