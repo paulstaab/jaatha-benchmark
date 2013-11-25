@@ -24,7 +24,7 @@ runTest <- function(dm, n.points=2, seed=12523, model){
   seeds <- sample.int(2^20, n)
 
   folder <- paste("results", version, model, sep="/")
-  log.folder <- paste("/tmp/logs", version, model, sep="/")
+  log.folder <- paste("logs", version, model, sep="/")
   dir.create(folder, recursive=T, showWarnings=F)
   dir.create(log.folder, recursive=T, showWarnings=F)
 
@@ -40,7 +40,6 @@ runTest <- function(dm, n.points=2, seed=12523, model){
       cat("----------------------------------------------------------------------\n")
       jsfs <- dm.simSumStats(dm, par.grid[i, ])
       jaatha <- Jaatha.initialize(dm, jsfs=jsfs, use.shm=TRUE, cores=2)
-      jaatha:::setLogging(3)
 
       runtimes <- rep(0, 6)
       names(runtimes) <-
