@@ -13,6 +13,7 @@ version <- as.character(packageVersion("jaatha"))
 cat("Testing version",version,"of Jaatha\n")
 
 runTest <- function(dm, n.points=2, seed=12523, model){
+  cat("Testing", model, "\n")
   set.seed(seed)
 
   par.grid <- CreateParGrid(dm, n.points)
@@ -23,7 +24,7 @@ runTest <- function(dm, n.points=2, seed=12523, model){
   seeds <- sample.int(2^20, n)
 
   folder <- paste("results", version, model, sep="/")
-  log.folder <- paste("logs", version, model, sep="/")
+  log.folder <- paste("/tmp/logs", version, model, sep="/")
   dir.create(folder, recursive=T, showWarnings=F)
   dir.create(log.folder, recursive=T, showWarnings=F)
 
@@ -39,6 +40,7 @@ runTest <- function(dm, n.points=2, seed=12523, model){
       cat("----------------------------------------------------------------------\n")
       jsfs <- dm.simSumStats(dm, par.grid[i, ])
       jaatha <- Jaatha.initialize(dm, jsfs=jsfs, use.shm=TRUE, cores=2)
+      jaatha:::setLogging(3)
 
       runtimes <- rep(0, 6)
       names(runtimes) <-
@@ -137,4 +139,6 @@ dm.mg <- dm.addMigration(dm.mg, .1, 5, pop.from=2, pop.to=1,
                          new.par.name="m21")
 dm.mg <- dm.addGrowth(dm.mg, .1, 5, population=2)
 dm.mg <- dm.addRecombination(dm.mg, fixed=20)
-#runTest(dm.mg, 2, model="mg", seed=1238714924)
+runTest(dm.mg, 2, model="mg", seed=1238714924)
+
+

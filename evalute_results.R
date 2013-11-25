@@ -27,9 +27,19 @@ for (version in versions) {
   version.name <- list.dirs()
   models <- list.dirs(version, recursive=F)
   for (model in models) {
-    estimates <- read.table(paste(model, "/estimates.txt", sep=""), header=T)
-    true.values <- read.table(paste(model, "/true_values.txt", sep=""), header=T)
-    run.times <- read.table(paste(model, "/runtimes.txt", sep=""), header=T)
+    file.est <- paste(model, "estimates.txt", sep="/")
+    file.true.values <- paste(model, "/true_values.txt", sep="")
+    file.run.times <- paste(model, "/runtimes.txt", sep="")
+
+    if (!(file.exists(file.est) & file.exists(file.true.values) &
+          file.exists(file.run.times)) ) {
+      warning(version, " ", model, ": Some results are missing")
+      next()
+    }
+
+    estimates <- read.table(file.est, header=T)
+    true.values <- read.table(file.true.values, header=T)
+    run.times <- read.table(file.run.times, header=T)
 
     mse <- mean((estimates - true.values)^2)
     avg.run.time <- mean(run.times[, 3] + run.times[,6])
