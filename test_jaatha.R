@@ -16,7 +16,7 @@ runTest <- function(dm, n.points=2, seed=12523, model){
   cat("Testing", model, "\n")
   set.seed(seed)
 
-  par.grid <- CreateParGrid(dm, n.points)
+  par.grid <- createParGrid(dm, n.points)
 
   cat("Simulating data...\n")
 
@@ -28,7 +28,7 @@ runTest <- function(dm, n.points=2, seed=12523, model){
   dir.create(folder, recursive=T, showWarnings=F)
   dir.create(log.folder, recursive=T, showWarnings=F)
 
-  registerDoMC(16)
+  registerDoMC(8)
 
   results <- foreach(i=1:n, .combine=rbind) %dopar% { 
       cat("Run",i,"of",n,"\n")
@@ -39,7 +39,7 @@ runTest <- function(dm, n.points=2, seed=12523, model){
       cat("Real parameters:",par.grid[i,],"\n")
       cat("----------------------------------------------------------------------\n")
       jsfs <- dm.simSumStats(dm, par.grid[i, ])
-      jaatha <- Jaatha.initialize(dm, jsfs=jsfs, use.shm=TRUE, cores=2)
+      jaatha <- Jaatha.initialize(dm, jsfs=jsfs, cores=4)
 
       runtimes <- rep(0, 6)
       names(runtimes) <-
@@ -65,30 +65,8 @@ runTest <- function(dm, n.points=2, seed=12523, model){
   write.table(runtimes,  file=paste(folder, "runtimes.txt", sep="/"), row.names=F)
 }
 
-evalTest <- function(test.results){
-  true.values <- test.results$RealPars
-  estimates <- test.results$Estimates
-  return(calcRSSE(estimates,true.values))
-}
-
-plotTrueVsEstimated <- function(true.values,estimates,parameter){
-  plot(true.values[,parameter],estimates[,parameter])
-  abline(0,1)
-}
-
-calcRSSE <- function(estimates,true.values){
-  rsse <- sqrt(sum(estimates - true.values)^2)
-  return(rsse)
-}
-
-calcAvgRunTime <- function(test.results){
-  run.times <- apply(test.results$RunTimes[,-c(3,8)],1,sum)
-  return(mean(run.times))
-}
-
-CreateParGrid <- function(dm,n.points){
+createParGrid <- function(dm,n.points){
   par.ranges <- jaatha:::dm.getParRanges(dm)
-  #print(par.ranges)
   n.dim <- length(jaatha:::dm.getParameters(dm))
   n.runs <- n.points^n.dim
   par.grid <- matrix(0,n.runs,n.dim)
@@ -98,9 +76,9 @@ CreateParGrid <- function(dm,n.points){
     par.grid[,i] <- rep(pars.current.dim,each=n.points^(i-1))
   }
 
+  par.grid <- rbind(par.grid, par.grid, par.grid)
   return(par.grid)
 }
-
 
 dm.getParRanges <- function(dm,inklExtTheta=T){
     parMask <- !is.na(dm@features$parameter)
@@ -112,21 +90,14 @@ dm.getParRanges <- function(dm,inklExtTheta=T){
 
 
 
-#if (file.exists("testResults.save")) { 
-#  load("testResults.save")
-#} else { 
-#  test.results <- list() 
-#}
 
-#if (is.null(test.results[[version]])) test.results[[version]] <- list()
-
-#Test a simple theta/tau model
+#Test a simple theta/tau/migration model
 dm <- dm.createDemographicModel(c(24,25), 100)
 dm <- dm.addSpeciationEvent(dm,0.001,5)
 dm <- dm.addMutation(dm,1,20)
 dm <- dm.addRecombination(dm,fixed=20)
 dm <- dm.addSymmetricMigration(dm, .1, 5)
-runTest(dm, 3, model="tt")
+runTest(dm, 2, model="tt")
 
 #Test a model with 5 parameters
 dm.mg <- dm.createDemographicModel(c(20,25), 100)
@@ -139,5 +110,3 @@ dm.mg <- dm.addMigration(dm.mg, .1, 5, pop.from=2, pop.to=1,
 dm.mg <- dm.addGrowth(dm.mg, .1, 5, population=2)
 dm.mg <- dm.addRecombination(dm.mg, fixed=20)
 runTest(dm.mg, 2, model="mg", seed=1238714924)
-
-
