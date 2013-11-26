@@ -76,7 +76,6 @@ createParGrid <- function(dm,n.points){
     par.grid[,i] <- rep(pars.current.dim,each=n.points^(i-1))
   }
 
-  par.grid <- rbind(par.grid, par.grid, par.grid)
   return(par.grid)
 }
 
@@ -89,15 +88,13 @@ dm.getParRanges <- function(dm,inklExtTheta=T){
 }
 
 
-
-
 #Test a simple theta/tau/migration model
-dm <- dm.createDemographicModel(c(24,25), 100)
-dm <- dm.addSpeciationEvent(dm,0.001,5)
-dm <- dm.addMutation(dm,1,20)
+dm <- dm.createDemographicModel(c(20,25), 100)
+dm <- dm.addSpeciationEvent(dm, 0.01, 5)
+dm <- dm.addMutation(dm, 1, 10)
 dm <- dm.addRecombination(dm,fixed=20)
-dm <- dm.addSymmetricMigration(dm, .1, 5)
-runTest(dm, 2, model="tt")
+dm <- dm.addSymmetricMigration(dm, .1, 2)
+runTest(dm, 3, model="tt", seed=13579)
 
 #Test a model with 5 parameters
 dm.mg <- dm.createDemographicModel(c(20,25), 100)
@@ -109,4 +106,4 @@ dm.mg <- dm.addMigration(dm.mg, .1, 5, pop.from=2, pop.to=1,
                          new.par.name="m21")
 dm.mg <- dm.addGrowth(dm.mg, .1, 5, population=2)
 dm.mg <- dm.addRecombination(dm.mg, fixed=20)
-runTest(dm.mg, 2, model="mg", seed=1238714924)
+#runTest(dm.mg, 2, model="mg", seed=24680)
