@@ -41,7 +41,11 @@ for (version in versions) {
     run.times <- read.table(file.run.times, header=T)
 
     #mse <- mean((estimates - true.values)^2)
-    mse <- mean(apply(abs(log10(estimates/true.values)), 2, mean))
+    par.error <- apply(abs(log10(estimates/true.values)), 2, mean)
+    print(model)
+    print(par.error)
+    cat('\n') 
+    mse <- mean(par.error)
     avg.run.time <- mean(run.times[, 3] + run.times[,6])
     version <- strsplit(model, "/")[[1]][2]
     model <- strsplit(model, "/")[[1]][3]
@@ -55,7 +59,7 @@ for (version in versions) {
 
 result <- data.frame(Version=res.version, 
            Model=res.model,
-           MSE=res.mse,
+           Error=res.mse,
            Run.Time=res.run.time )
 
 print(result)
