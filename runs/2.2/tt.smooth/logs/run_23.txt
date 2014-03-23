@@ -1,0 +1,2153 @@
+----------------------------------------------------------------------
+Run 23 of 54 
+Real parameters: 2.505 1.05 7.75 
+----------------------------------------------------------------------
+*** Searching starting positions *** 
+Creating initial blocks ...  
+*** Block 1 : 0.01-0.224 x 0.1-0.447 x 1-3.162 
+Best parameters 0.224 0.1 3.162 with estimated log-likelihood -5029.039 
+
+*** Block 2 : 0.01-0.224 x 0.1-0.447 x 3.162-10 
+Best parameters 0.224 0.1 9.944 with estimated log-likelihood -2297.87 
+
+*** Block 3 : 0.01-0.224 x 0.447-2 x 1-3.162 
+Best parameters 0.224 0.447 3.162 with estimated log-likelihood -5016.128 
+
+*** Block 4 : 0.01-0.224 x 0.447-2 x 3.162-10 
+Best parameters 0.224 0.447 10 with estimated log-likelihood -2293.735 
+
+*** Block 5 : 0.224-5 x 0.1-0.447 x 1-3.162 
+Best parameters 3.122 0.447 3.162 with estimated log-likelihood -4411.992 
+
+*** Block 6 : 0.224-5 x 0.1-0.447 x 3.162-10 
+Best parameters 0.411 0.447 10 with estimated log-likelihood -2357.919 
+
+*** Block 7 : 0.224-5 x 0.447-2 x 1-3.162 
+Best parameters 5 0.913 3.162 with estimated log-likelihood -3454.781 
+
+*** Block 8 : 0.224-5 x 0.447-2 x 3.162-10 
+Best parameters 3.713 0.997 7.698 with estimated log-likelihood -1964.329 
+
+     log.likelihood t_split_1     M  theta
+[1,]      -1964.329     3.713 0.997  7.698
+[2,]      -2293.735     0.224 0.447 10.000
+[3,]      -2297.870     0.224 0.100  9.944
+[4,]      -2357.919     0.411 0.447 10.000
+[5,]      -3454.781     5.000 0.913  3.162
+[6,]      -4411.992     3.122 0.447  3.162
+[7,]      -5016.128     0.224 0.447  3.162
+[8,]      -5029.039     0.224 0.100  3.162
+*** Search with starting Point in Block 1 of 2 **** 
+----------------- 
+Step No 1 
+Using 83 Simulations 
+Best parameters 3.179 0.979 7.534 with estimated log-likelihood -1964.989 
+
+----------------- 
+Step No 2 
+Using 108 Simulations 
+Best parameters 2.975 0.987 7.533 with estimated log-likelihood -1977.392 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 3 
+Using 162 Simulations 
+Best parameters 3.001 0.978 7.493 with estimated log-likelihood -1962.209 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 4 
+Using 226 Simulations 
+Best parameters 2.786 1.012 7.783 with estimated log-likelihood -1962.115 
+
+----------------- 
+Step No 5 
+Using 180 Simulations 
+Best parameters 2.432 1.004 7.698 with estimated log-likelihood -1970.535 
+
+----------------- 
+Step No 6 
+Using 158 Simulations 
+Best parameters 2.532 0.992 7.833 with estimated log-likelihood -1963.037 
+
+----------------- 
+Step No 7 
+Using 189 Simulations 
+Best parameters 2.419 0.995 7.849 with estimated log-likelihood -1964.632 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 8 
+Using 248 Simulations 
+Best parameters 2.459 0.99 7.837 with estimated log-likelihood -1968.651 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 9 
+Using 317 Simulations 
+Best parameters 2.375 1.006 7.743 with estimated log-likelihood -1967.645 
+No sigificant score changes in the last 3 Step(s) 
+
+----------------- 
+Step No 10 
+Using 328 Simulations 
+Best parameters 2.774 0.991 7.583 with estimated log-likelihood -1960.29 
+
+----------------- 
+Step No 11 
+Using 250 Simulations 
+Best parameters 2.827 0.991 7.57 with estimated log-likelihood -1972.757 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 12 
+Using 311 Simulations 
+Best parameters 3.146 0.957 7.503 with estimated log-likelihood -1971.642 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 13 
+Using 185 Simulations 
+Best parameters 2.693 0.964 7.655 with estimated log-likelihood -1969.43 
+
+----------------- 
+Step No 14 
+Using 204 Simulations 
+Best parameters 2.456 0.985 7.682 with estimated log-likelihood -1973.142 
+
+----------------- 
+Step No 15 
+Using 186 Simulations 
+Best parameters 2.616 1.047 7.914 with estimated log-likelihood -1959.1 
+
+----------------- 
+Step No 16 
+Using 153 Simulations 
+Best parameters 2.424 1.033 8.052 with estimated log-likelihood -1973.693 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 17 
+Using 179 Simulations 
+Best parameters 2.373 1.038 7.853 with estimated log-likelihood -1971.543 
+
+----------------- 
+Step No 18 
+Using 222 Simulations 
+Best parameters 2.772 1.029 7.768 with estimated log-likelihood -1960.911 
+
+----------------- 
+Step No 19 
+Using 194 Simulations 
+Best parameters 2.758 1.028 7.931 with estimated log-likelihood -1961.04 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 20 
+Using 247 Simulations 
+Best parameters 2.361 0.984 7.815 with estimated log-likelihood -1956.312 
+
+----------------- 
+Step No 21 
+Using 220 Simulations 
+Best parameters 2.254 0.999 7.785 with estimated log-likelihood -1965.638 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 22 
+Using 233 Simulations 
+Best parameters 2.428 0.949 7.7 with estimated log-likelihood -1965.012 
+
+----------------- 
+Step No 23 
+Using 212 Simulations 
+Best parameters 2.078 1.009 7.905 with estimated log-likelihood -1960.782 
+
+----------------- 
+Step No 24 
+Using 137 Simulations 
+Best parameters 2.285 0.988 7.859 with estimated log-likelihood -1975.451 
+
+----------------- 
+Step No 25 
+Using 185 Simulations 
+Best parameters 1.956 0.945 8.019 with estimated log-likelihood -1958.051 
+
+----------------- 
+Step No 26 
+Using 146 Simulations 
+Best parameters 2.104 0.959 7.804 with estimated log-likelihood -1965.94 
+
+----------------- 
+Step No 27 
+Using 179 Simulations 
+Best parameters 1.946 0.909 7.882 with estimated log-likelihood -1966.7 
+
+----------------- 
+Step No 28 
+Using 171 Simulations 
+Best parameters 1.985 0.949 7.97 with estimated log-likelihood -1973.047 
+
+----------------- 
+Step No 29 
+Using 206 Simulations 
+Best parameters 1.899 0.961 8.076 with estimated log-likelihood -1967.498 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 30 
+Using 221 Simulations 
+Best parameters 2.218 1.011 7.962 with estimated log-likelihood -1955.651 
+
+----------------- 
+Step No 31 
+Using 171 Simulations 
+Best parameters 2.154 0.998 7.904 with estimated log-likelihood -1963.233 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 32 
+Using 228 Simulations 
+Best parameters 2.052 0.987 8.088 with estimated log-likelihood -1966.174 
+
+----------------- 
+Step No 33 
+Using 250 Simulations 
+Best parameters 1.971 0.979 8.153 with estimated log-likelihood -1961.522 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 34 
+Using 283 Simulations 
+Best parameters 1.891 0.974 8.117 with estimated log-likelihood -1970.627 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 35 
+Using 318 Simulations 
+Best parameters 1.995 0.958 8.106 with estimated log-likelihood -1977.912 
+No sigificant score changes in the last 3 Step(s) 
+
+----------------- 
+Step No 36 
+Using 343 Simulations 
+Best parameters 1.879 0.946 8.106 with estimated log-likelihood -1968.177 
+No sigificant score changes in the last 4 Step(s) 
+
+----------------- 
+Step No 37 
+Using 371 Simulations 
+Best parameters 2.056 0.964 8.349 with estimated log-likelihood -1967.124 
+
+----------------- 
+Step No 38 
+Using 313 Simulations 
+Best parameters 2.378 0.967 8.092 with estimated log-likelihood -1972.516 
+
+----------------- 
+Step No 39 
+Using 211 Simulations 
+Best parameters 2.147 1.007 8.044 with estimated log-likelihood -1959.6 
+
+----------------- 
+Step No 40 
+Using 224 Simulations 
+Best parameters 2.224 0.987 7.885 with estimated log-likelihood -1968.686 
+
+----------------- 
+Step No 41 
+Using 258 Simulations 
+Best parameters 2.49 0.946 7.644 with estimated log-likelihood -1967.434 
+
+----------------- 
+Step No 42 
+Using 169 Simulations 
+Best parameters 2.603 0.998 7.754 with estimated log-likelihood -1962.975 
+
+----------------- 
+Step No 43 
+Using 168 Simulations 
+Best parameters 2.942 1.027 7.625 with estimated log-likelihood -1972.819 
+
+----------------- 
+Step No 44 
+Using 120 Simulations 
+Best parameters 2.762 1.066 7.55 with estimated log-likelihood -1973.383 
+
+----------------- 
+Step No 45 
+Using 141 Simulations 
+Best parameters 2.364 0.989 7.842 with estimated log-likelihood -1961.374 
+
+----------------- 
+Step No 46 
+Using 105 Simulations 
+Best parameters 2.134 1.026 8.115 with estimated log-likelihood -1966.109 
+
+----------------- 
+Step No 47 
+Using 113 Simulations 
+Best parameters 2.492 1.003 7.692 with estimated log-likelihood -1959.798 
+
+----------------- 
+Step No 48 
+Using 120 Simulations 
+Best parameters 2.283 0.961 7.712 with estimated log-likelihood -1962.906 
+
+----------------- 
+Step No 49 
+Using 157 Simulations 
+Best parameters 2.667 0.952 7.666 with estimated log-likelihood -1958.218 
+
+----------------- 
+Step No 50 
+Using 158 Simulations 
+Best parameters 2.283 0.939 7.803 with estimated log-likelihood -1960.762 
+
+----------------- 
+Step No 51 
+Using 171 Simulations 
+Best parameters 1.954 0.99 8.06 with estimated log-likelihood -1961.758 
+
+----------------- 
+Step No 52 
+Using 101 Simulations 
+Best parameters 1.925 0.978 8.239 with estimated log-likelihood -1965.542 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 53 
+Using 149 Simulations 
+Best parameters 1.72 1.044 8.326 with estimated log-likelihood -1965.042 
+
+----------------- 
+Step No 54 
+Using 137 Simulations 
+Best parameters 2.009 1.041 8.067 with estimated log-likelihood -1965.832 
+
+----------------- 
+Step No 55 
+Using 151 Simulations 
+Best parameters 2.346 1.004 8.015 with estimated log-likelihood -1961.113 
+
+----------------- 
+Step No 56 
+Using 112 Simulations 
+Best parameters 2.39 0.959 7.766 with estimated log-likelihood -1963.539 
+
+----------------- 
+Step No 57 
+Using 131 Simulations 
+Best parameters 2.239 1.026 7.955 with estimated log-likelihood -1964.426 
+
+----------------- 
+Step No 58 
+Using 140 Simulations 
+Best parameters 2.071 0.952 7.957 with estimated log-likelihood -1962.459 
+
+----------------- 
+Step No 59 
+Using 156 Simulations 
+Best parameters 2.275 0.995 7.977 with estimated log-likelihood -1962.836 
+
+----------------- 
+Step No 60 
+Using 186 Simulations 
+Best parameters 2.658 0.981 7.951 with estimated log-likelihood -1955.185 
+
+----------------- 
+Step No 61 
+Using 152 Simulations 
+Best parameters 2.293 1.014 7.915 with estimated log-likelihood -1962.704 
+
+----------------- 
+Step No 62 
+Using 179 Simulations 
+Best parameters 2.375 1.001 7.622 with estimated log-likelihood -1961.415 
+
+----------------- 
+Step No 63 
+Using 194 Simulations 
+Best parameters 2.502 0.978 7.604 with estimated log-likelihood -1978.644 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 64 
+Using 231 Simulations 
+Best parameters 2.284 1.003 7.842 with estimated log-likelihood -1964.874 
+
+----------------- 
+Step No 65 
+Using 236 Simulations 
+Best parameters 1.985 0.981 8.039 with estimated log-likelihood -1963.757 
+
+----------------- 
+Step No 66 
+Using 141 Simulations 
+Best parameters 1.964 1.002 8.241 with estimated log-likelihood -1963.523 
+
+----------------- 
+Step No 67 
+Using 170 Simulations 
+Best parameters 2.294 0.972 8.104 with estimated log-likelihood -1964.276 
+
+----------------- 
+Step No 68 
+Using 170 Simulations 
+Best parameters 2.367 1.009 7.844 with estimated log-likelihood -1966.913 
+
+----------------- 
+Step No 69 
+Using 177 Simulations 
+Best parameters 2.105 0.986 7.949 with estimated log-likelihood -1961.692 
+
+----------------- 
+Step No 70 
+Using 185 Simulations 
+Best parameters 2.173 0.961 7.879 with estimated log-likelihood -1964.483 
+
+----------------- 
+Step No 71 
+Using 221 Simulations 
+Best parameters 2.32 0.979 7.865 with estimated log-likelihood -1964.411 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 72 
+Using 260 Simulations 
+Best parameters 2.71 0.961 7.511 with estimated log-likelihood -1961.273 
+
+----------------- 
+Step No 73 
+Using 136 Simulations 
+Best parameters 2.538 0.942 7.956 with estimated log-likelihood -1955.261 
+
+----------------- 
+Step No 74 
+Using 139 Simulations 
+Best parameters 2.174 1.015 7.853 with estimated log-likelihood -1960.524 
+
+----------------- 
+Step No 75 
+Using 126 Simulations 
+Best parameters 2.221 1.025 7.872 with estimated log-likelihood -1962.33 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 76 
+Using 188 Simulations 
+Best parameters 2.385 0.996 8.003 with estimated log-likelihood -1967.935 
+
+----------------- 
+Step No 77 
+Using 194 Simulations 
+Best parameters 2.177 1.012 8.11 with estimated log-likelihood -1969.98 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 78 
+Using 217 Simulations 
+Best parameters 2.057 0.971 8.011 with estimated log-likelihood -1962.462 
+
+----------------- 
+Step No 79 
+Using 211 Simulations 
+Best parameters 2.167 0.981 8.032 with estimated log-likelihood -1973.862 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 80 
+Using 275 Simulations 
+Best parameters 2.262 1.028 7.713 with estimated log-likelihood -1961.813 
+
+----------------- 
+Step No 81 
+Using 210 Simulations 
+Best parameters 2.317 1.016 7.835 with estimated log-likelihood -1972.611 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 82 
+Using 261 Simulations 
+Best parameters 2.384 0.998 7.839 with estimated log-likelihood -1977.969 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 83 
+Using 304 Simulations 
+Best parameters 2.614 1.016 7.645 with estimated log-likelihood -1965.254 
+
+----------------- 
+Step No 84 
+Using 229 Simulations 
+Best parameters 2.852 1.013 7.512 with estimated log-likelihood -1969.401 
+
+----------------- 
+Step No 85 
+Using 168 Simulations 
+Best parameters 2.746 0.987 7.559 with estimated log-likelihood -1965.965 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 86 
+Using 206 Simulations 
+Best parameters 2.983 0.984 7.494 with estimated log-likelihood -1970.851 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 87 
+Using 219 Simulations 
+Best parameters 2.554 0.965 7.763 with estimated log-likelihood -1950.368 
+
+----------------- 
+Step No 88 
+Using 171 Simulations 
+Best parameters 2.461 0.967 7.931 with estimated log-likelihood -1976.731 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 89 
+Using 179 Simulations 
+Best parameters 2.426 1.025 7.821 with estimated log-likelihood -1969.841 
+
+----------------- 
+Step No 90 
+Using 182 Simulations 
+Best parameters 2.269 1.039 7.954 with estimated log-likelihood -1967.231 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 91 
+Using 181 Simulations 
+Best parameters 2.65 0.971 7.716 with estimated log-likelihood -1957.862 
+
+----------------- 
+Step No 92 
+Using 148 Simulations 
+Best parameters 3.095 0.961 7.543 with estimated log-likelihood -1959.59 
+
+----------------- 
+Step No 93 
+Using 105 Simulations 
+Best parameters 2.914 0.973 7.575 with estimated log-likelihood -1963.74 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 94 
+Using 161 Simulations 
+Best parameters 2.521 0.962 7.641 with estimated log-likelihood -1969.196 
+
+----------------- 
+Step No 95 
+Using 157 Simulations 
+Best parameters 2.473 0.991 7.618 with estimated log-likelihood -1965.369 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 96 
+Using 186 Simulations 
+Best parameters 2.117 0.973 8.069 with estimated log-likelihood -1955.954 
+
+----------------- 
+Step No 97 
+Using 120 Simulations 
+Best parameters 1.888 0.979 8.01 with estimated log-likelihood -1962.673 
+
+----------------- 
+Step No 98 
+Using 128 Simulations 
+Best parameters 2.158 1.024 7.827 with estimated log-likelihood -1963.035 
+
+----------------- 
+Step No 99 
+Using 129 Simulations 
+Best parameters 2.521 0.98 7.557 with estimated log-likelihood -1952.507 
+
+----------------- 
+Step No 100 
+Using 107 Simulations 
+Best parameters 2.945 0.987 7.488 with estimated log-likelihood -1954.414 
+
+----------------- 
+Step No 101 
+Using 113 Simulations 
+Best parameters 2.521 1.003 7.855 with estimated log-likelihood -1968.294 
+
+----------------- 
+Step No 102 
+Using 124 Simulations 
+Best parameters 2.368 0.964 7.869 with estimated log-likelihood -1966.809 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 103 
+Using 149 Simulations 
+Best parameters 2.395 1.002 7.751 with estimated log-likelihood -1962.797 
+
+----------------- 
+Step No 104 
+Using 194 Simulations 
+Best parameters 2.509 1.014 7.801 with estimated log-likelihood -1962.724 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 105 
+Using 226 Simulations 
+Best parameters 2.806 0.996 7.58 with estimated log-likelihood -1968.18 
+
+----------------- 
+Step No 106 
+Using 188 Simulations 
+Best parameters 3.068 0.924 7.593 with estimated log-likelihood -1960.222 
+
+----------------- 
+Step No 107 
+Using 147 Simulations 
+Best parameters 2.626 0.996 7.661 with estimated log-likelihood -1967.219 
+
+----------------- 
+Step No 108 
+Using 150 Simulations 
+Best parameters 2.416 1.036 7.838 with estimated log-likelihood -1963.471 
+
+----------------- 
+Step No 109 
+Using 129 Simulations 
+Best parameters 2.314 0.962 7.726 with estimated log-likelihood -1960.388 
+
+----------------- 
+Step No 110 
+Using 138 Simulations 
+Best parameters 2.313 0.944 7.824 with estimated log-likelihood -1971.25 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 111 
+Using 190 Simulations 
+Best parameters 2.24 0.96 7.889 with estimated log-likelihood -1962.664 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 112 
+Using 216 Simulations 
+Best parameters 2.047 0.959 8.171 with estimated log-likelihood -1962.006 
+
+----------------- 
+Step No 113 
+Using 172 Simulations 
+Best parameters 1.887 0.938 7.854 with estimated log-likelihood -1959.447 
+
+----------------- 
+Step No 114 
+Using 166 Simulations 
+Best parameters 1.798 1.007 8.084 with estimated log-likelihood -1964.489 
+
+----------------- 
+Step No 115 
+Using 134 Simulations 
+Best parameters 2.1 0.992 7.96 with estimated log-likelihood -1963.198 
+
+----------------- 
+Step No 116 
+Using 150 Simulations 
+Best parameters 2.163 0.976 7.935 with estimated log-likelihood -1971.247 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 117 
+Using 196 Simulations 
+Best parameters 2.349 1.002 7.916 with estimated log-likelihood -1965.682 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 118 
+Using 189 Simulations 
+Best parameters 2.495 0.966 7.88 with estimated log-likelihood -1955.23 
+
+----------------- 
+Step No 119 
+Using 175 Simulations 
+Best parameters 2.593 0.986 7.613 with estimated log-likelihood -1966.039 
+
+----------------- 
+Step No 120 
+Using 169 Simulations 
+Best parameters 2.294 0.915 7.619 with estimated log-likelihood -1966.698 
+
+----------------- 
+Step No 121 
+Using 142 Simulations 
+Best parameters 2.642 0.986 7.515 with estimated log-likelihood -1966.373 
+
+----------------- 
+Step No 122 
+Using 145 Simulations 
+Best parameters 3.01 0.991 7.429 with estimated log-likelihood -1965.666 
+
+----------------- 
+Step No 123 
+Using 125 Simulations 
+Best parameters 2.826 0.948 7.751 with estimated log-likelihood -1958.77 
+
+----------------- 
+Step No 124 
+Using 134 Simulations 
+Best parameters 2.623 0.981 7.729 with estimated log-likelihood -1972.015 
+
+----------------- 
+Step No 125 
+Using 171 Simulations 
+Best parameters 2.347 0.988 7.901 with estimated log-likelihood -1962.963 
+
+----------------- 
+Step No 126 
+Using 151 Simulations 
+Best parameters 2.433 0.94 7.816 with estimated log-likelihood -1970.178 
+
+----------------- 
+Step No 127 
+Using 187 Simulations 
+Best parameters 2.842 0.985 7.577 with estimated log-likelihood -1958.583 
+
+----------------- 
+Step No 128 
+Using 155 Simulations 
+Best parameters 3.319 0.985 7.508 with estimated log-likelihood -1968.152 
+
+----------------- 
+Step No 129 
+Using 124 Simulations 
+Best parameters 3.064 0.98 7.763 with estimated log-likelihood -1977.214 
+
+----------------- 
+Step No 130 
+Using 153 Simulations 
+Best parameters 3.387 0.935 7.328 with estimated log-likelihood -1962.332 
+
+----------------- 
+Step No 131 
+Using 122 Simulations 
+Best parameters 2.899 0.929 7.669 with estimated log-likelihood -1968.424 
+
+----------------- 
+Step No 132 
+Using 145 Simulations 
+Best parameters 2.715 0.949 7.672 with estimated log-likelihood -1974.375 
+
+----------------- 
+Step No 133 
+Using 172 Simulations 
+Best parameters 2.903 0.993 7.892 with estimated log-likelihood -1968.623 
+
+----------------- 
+Step No 134 
+Using 147 Simulations 
+Best parameters 2.759 0.977 7.731 with estimated log-likelihood -1977.467 
+
+----------------- 
+Step No 135 
+Using 192 Simulations 
+Best parameters 2.513 0.99 7.774 with estimated log-likelihood -1966.817 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 136 
+Using 195 Simulations 
+Best parameters 2.333 1.013 7.817 with estimated log-likelihood -1961.122 
+
+----------------- 
+Step No 137 
+Using 183 Simulations 
+Best parameters 2.118 1.05 8.202 with estimated log-likelihood -1968.221 
+
+----------------- 
+Step No 138 
+Using 129 Simulations 
+Best parameters 2.162 0.995 7.957 with estimated log-likelihood -1967.91 
+
+----------------- 
+Step No 139 
+Using 155 Simulations 
+Best parameters 2.01 1.001 8.132 with estimated log-likelihood -1966.76 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 140 
+Using 181 Simulations 
+Best parameters 2.12 1.079 8.144 with estimated log-likelihood -1962.387 
+
+----------------- 
+Step No 141 
+Using 177 Simulations 
+Best parameters 2.212 1.001 8.099 with estimated log-likelihood -1966.056 
+
+----------------- 
+Step No 142 
+Using 201 Simulations 
+Best parameters 2.162 1.004 7.923 with estimated log-likelihood -1963.105 
+
+----------------- 
+Step No 143 
+Using 247 Simulations 
+Best parameters 2.106 0.996 8.037 with estimated log-likelihood -1968.408 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 144 
+Using 289 Simulations 
+Best parameters 2.009 0.977 8.12 with estimated log-likelihood -1969.6 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 145 
+Using 268 Simulations 
+Best parameters 2.347 0.965 8.009 with estimated log-likelihood -1962.89 
+
+----------------- 
+Step No 146 
+Using 209 Simulations 
+Best parameters 2.33 0.97 7.852 with estimated log-likelihood -1963.046 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 147 
+Using 252 Simulations 
+Best parameters 2.39 1 7.876 with estimated log-likelihood -1966.057 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 148 
+Using 260 Simulations 
+Best parameters 2.543 1.002 7.716 with estimated log-likelihood -1958.598 
+No sigificant score changes in the last 3 Step(s) 
+
+----------------- 
+Step No 149 
+Using 224 Simulations 
+Best parameters 2.728 1.002 7.86 with estimated log-likelihood -1972.549 
+
+----------------- 
+Step No 150 
+Using 206 Simulations 
+Best parameters 2.335 0.962 7.623 with estimated log-likelihood -1958.147 
+
+----------------- 
+Step No 151 
+Using 173 Simulations 
+Best parameters 2.443 0.931 7.631 with estimated log-likelihood -1965.694 
+
+----------------- 
+Step No 152 
+Using 199 Simulations 
+Best parameters 2.469 0.988 7.642 with estimated log-likelihood -1965.327 
+
+----------------- 
+Step No 153 
+Using 235 Simulations 
+Best parameters 2.136 0.977 7.951 with estimated log-likelihood -1964.333 
+
+----------------- 
+Step No 154 
+Using 178 Simulations 
+Best parameters 2.359 0.964 8.002 with estimated log-likelihood -1964.661 
+
+----------------- 
+Step No 155 
+Using 212 Simulations 
+Best parameters 2.06 0.978 8.176 with estimated log-likelihood -1964.266 
+
+----------------- 
+Step No 156 
+Using 197 Simulations 
+Best parameters 2.406 0.941 7.962 with estimated log-likelihood -1965.905 
+
+----------------- 
+Step No 157 
+Using 199 Simulations 
+Best parameters 2.269 0.955 8.027 with estimated log-likelihood -1973.756 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 158 
+Using 256 Simulations 
+Best parameters 2.365 1.009 8.127 with estimated log-likelihood -1962.006 
+
+----------------- 
+Step No 159 
+Using 233 Simulations 
+Best parameters 2.178 1.015 8.105 with estimated log-likelihood -1970.461 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 160 
+Using 276 Simulations 
+Best parameters 2.208 0.997 8.005 with estimated log-likelihood -1958.809 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 161 
+Using 316 Simulations 
+Best parameters 2.121 0.993 7.998 with estimated log-likelihood -1965.898 
+No sigificant score changes in the last 3 Step(s) 
+
+----------------- 
+Step No 162 
+Using 358 Simulations 
+Best parameters 2.091 0.983 8.074 with estimated log-likelihood -1967.969 
+No sigificant score changes in the last 4 Step(s) 
+
+----------------- 
+Step No 163 
+Using 396 Simulations 
+Best parameters 1.976 1.056 8.187 with estimated log-likelihood -1958.681 
+
+----------------- 
+Step No 164 
+Using 223 Simulations 
+Best parameters 2.174 1.031 7.984 with estimated log-likelihood -1970.491 
+
+----------------- 
+Step No 165 
+Using 249 Simulations 
+Best parameters 1.996 1.007 8.1 with estimated log-likelihood -1965.102 
+
+----------------- 
+Step No 166 
+Using 280 Simulations 
+Best parameters 2.009 0.969 8.014 with estimated log-likelihood -1970.002 
+
+----------------- 
+Step No 167 
+Using 296 Simulations 
+Best parameters 2.197 0.991 7.891 with estimated log-likelihood -1970.13 
+
+----------------- 
+Step No 168 
+Using 286 Simulations 
+Best parameters 1.912 1.016 8.062 with estimated log-likelihood -1957.378 
+
+----------------- 
+Step No 169 
+Using 266 Simulations 
+Best parameters 2.045 1.018 8.094 with estimated log-likelihood -1969.109 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 170 
+Using 321 Simulations 
+Best parameters 2.389 1.047 7.885 with estimated log-likelihood -1975.496 
+
+----------------- 
+Step No 171 
+Using 209 Simulations 
+Best parameters 2.239 0.971 8.099 with estimated log-likelihood -1969.726 
+
+----------------- 
+Step No 172 
+Using 210 Simulations 
+Best parameters 1.945 0.964 8.151 with estimated log-likelihood -1966.206 
+
+----------------- 
+Step No 173 
+Using 231 Simulations 
+Best parameters 1.774 0.932 8.293 with estimated log-likelihood -1971.193 
+
+----------------- 
+Step No 174 
+Using 131 Simulations 
+Best parameters 1.818 1.004 8.263 with estimated log-likelihood -1969.564 
+
+----------------- 
+Step No 175 
+Using 147 Simulations 
+Best parameters 2.123 0.971 7.874 with estimated log-likelihood -1963.806 
+
+----------------- 
+Step No 176 
+Using 127 Simulations 
+Best parameters 1.884 1.001 7.981 with estimated log-likelihood -1967.561 
+
+----------------- 
+Step No 177 
+Using 163 Simulations 
+Best parameters 2.201 1.034 8.003 with estimated log-likelihood -1964.058 
+
+----------------- 
+Step No 178 
+Using 159 Simulations 
+Best parameters 2.301 1.032 8.008 with estimated log-likelihood -1962.612 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 179 
+Using 207 Simulations 
+Best parameters 2.078 1.045 8.038 with estimated log-likelihood -1970.089 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 180 
+Using 221 Simulations 
+Best parameters 2.427 1.017 7.765 with estimated log-likelihood -1958.062 
+
+----------------- 
+Step No 181 
+Using 160 Simulations 
+Best parameters 2.12 1.012 8.037 with estimated log-likelihood -1967.903 
+
+----------------- 
+Step No 182 
+Using 184 Simulations 
+Best parameters 2.231 1.01 7.946 with estimated log-likelihood -1959.099 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 183 
+Using 243 Simulations 
+Best parameters 1.937 1.003 7.889 with estimated log-likelihood -1965.023 
+
+----------------- 
+Step No 184 
+Using 212 Simulations 
+Best parameters 2.262 0.985 7.835 with estimated log-likelihood -1958.382 
+
+----------------- 
+Step No 185 
+Using 217 Simulations 
+Best parameters 2.499 0.986 7.632 with estimated log-likelihood -1962.633 
+
+----------------- 
+Step No 186 
+Using 169 Simulations 
+Best parameters 2.613 1.008 7.648 with estimated log-likelihood -1963.651 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 187 
+Using 169 Simulations 
+Best parameters 2.485 0.972 7.759 with estimated log-likelihood -1967.571 
+
+----------------- 
+Step No 188 
+Using 188 Simulations 
+Best parameters 2.127 0.976 7.956 with estimated log-likelihood -1965.825 
+
+----------------- 
+Step No 189 
+Using 161 Simulations 
+Best parameters 2.19 0.93 7.929 with estimated log-likelihood -1970.779 
+
+----------------- 
+Step No 190 
+Using 179 Simulations 
+Best parameters 2.132 0.941 7.934 with estimated log-likelihood -1974.987 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 191 
+Using 241 Simulations 
+Best parameters 2.371 0.955 7.767 with estimated log-likelihood -1967.013 
+
+----------------- 
+Step No 192 
+Using 238 Simulations 
+Best parameters 2.408 1.02 7.937 with estimated log-likelihood -1961.991 
+
+----------------- 
+Step No 193 
+Using 214 Simulations 
+Best parameters 2.061 1.005 8.077 with estimated log-likelihood -1954.984 
+
+----------------- 
+Step No 194 
+Using 184 Simulations 
+Best parameters 2.006 0.976 7.948 with estimated log-likelihood -1973.029 
+
+----------------- 
+Step No 195 
+Using 213 Simulations 
+Best parameters 2.06 1.026 8.052 with estimated log-likelihood -1961.23 
+
+----------------- 
+Step No 196 
+Using 241 Simulations 
+Best parameters 1.837 0.952 8.101 with estimated log-likelihood -1954.547 
+
+----------------- 
+Step No 197 
+Using 159 Simulations 
+Best parameters 1.964 0.978 7.999 with estimated log-likelihood -1968.836 
+
+----------------- 
+Step No 198 
+Using 198 Simulations 
+Best parameters 2.294 0.945 7.722 with estimated log-likelihood -1958.286 
+
+----------------- 
+Step No 199 
+Using 148 Simulations 
+Best parameters 2.68 1.014 7.731 with estimated log-likelihood -1954.029 
+
+Maximimum number of search steps 200 reached.
+ 
+
+Calculating log-composite-likelihoods for best estimates: 
+* Parameter combination 1 of 10 
+* Parameter combination 2 of 10 
+* Parameter combination 3 of 10 
+* Parameter combination 4 of 10 
+* Parameter combination 5 of 10 
+* Parameter combination 6 of 10 
+* Parameter combination 7 of 10 
+* Parameter combination 8 of 10 
+* Parameter combination 9 of 10 
+* Parameter combination 10 of 10 
+
+*** Search with starting Point in Block 2 of 2 **** 
+----------------- 
+Step No 1 
+Using 83 Simulations 
+Best parameters 0.261 0.482 10 with estimated log-likelihood -2386.031 
+
+----------------- 
+Step No 2 
+Using 100 Simulations 
+Best parameters 0.283 0.519 10 with estimated log-likelihood -2408.671 
+
+----------------- 
+Step No 3 
+Using 111 Simulations 
+Best parameters 0.242 0.56 10 with estimated log-likelihood -2317.687 
+
+----------------- 
+Step No 4 
+Using 101 Simulations 
+Best parameters 0.265 0.603 10 with estimated log-likelihood -2407.319 
+
+----------------- 
+Step No 5 
+Using 111 Simulations 
+Best parameters 0.31 0.65 10 with estimated log-likelihood -2361.559 
+
+----------------- 
+Step No 6 
+Using 112 Simulations 
+Best parameters 0.362 0.701 10 with estimated log-likelihood -2313.669 
+
+----------------- 
+Step No 7 
+Using 101 Simulations 
+Best parameters 0.423 0.75 10 with estimated log-likelihood -2287.415 
+
+----------------- 
+Step No 8 
+Using 104 Simulations 
+Best parameters 0.494 0.809 9.858 with estimated log-likelihood -2216.103 
+
+----------------- 
+Step No 9 
+Using 107 Simulations 
+Best parameters 0.577 0.872 9.586 with estimated log-likelihood -2164.884 
+
+----------------- 
+Step No 10 
+Using 103 Simulations 
+Best parameters 0.674 0.939 9.632 with estimated log-likelihood -2126.193 
+
+----------------- 
+Step No 11 
+Using 101 Simulations 
+Best parameters 0.787 1.012 9.293 with estimated log-likelihood -2085.323 
+
+----------------- 
+Step No 12 
+Using 93 Simulations 
+Best parameters 0.919 0.965 9.335 with estimated log-likelihood -2058.083 
+
+----------------- 
+Step No 13 
+Using 104 Simulations 
+Best parameters 1.073 1.041 8.813 with estimated log-likelihood -2031.098 
+
+----------------- 
+Step No 14 
+Using 91 Simulations 
+Best parameters 1.254 0.99 8.701 with estimated log-likelihood -1997.005 
+
+----------------- 
+Step No 15 
+Using 107 Simulations 
+Best parameters 1.465 0.979 8.459 with estimated log-likelihood -1996.086 
+
+----------------- 
+Step No 16 
+Using 117 Simulations 
+Best parameters 1.711 0.954 8.198 with estimated log-likelihood -1969.223 
+
+----------------- 
+Step No 17 
+Using 104 Simulations 
+Best parameters 1.998 0.978 8.114 with estimated log-likelihood -1966.77 
+
+----------------- 
+Step No 18 
+Using 121 Simulations 
+Best parameters 2.278 1.005 8.011 with estimated log-likelihood -1965.558 
+
+----------------- 
+Step No 19 
+Using 116 Simulations 
+Best parameters 2.529 1.006 7.735 with estimated log-likelihood -1964.699 
+
+----------------- 
+Step No 20 
+Using 138 Simulations 
+Best parameters 2.386 1.015 8.122 with estimated log-likelihood -1971.201 
+
+----------------- 
+Step No 21 
+Using 156 Simulations 
+Best parameters 2.439 1.028 7.903 with estimated log-likelihood -1965.425 
+
+----------------- 
+Step No 22 
+Using 205 Simulations 
+Best parameters 2.411 0.954 7.94 with estimated log-likelihood -1958.04 
+
+----------------- 
+Step No 23 
+Using 188 Simulations 
+Best parameters 2.817 0.966 7.624 with estimated log-likelihood -1956.077 
+
+----------------- 
+Step No 24 
+Using 145 Simulations 
+Best parameters 3.118 0.954 7.413 with estimated log-likelihood -1966.565 
+
+----------------- 
+Step No 25 
+Using 132 Simulations 
+Best parameters 2.77 0.95 7.72 with estimated log-likelihood -1967.007 
+
+----------------- 
+Step No 26 
+Using 142 Simulations 
+Best parameters 2.457 0.946 7.714 with estimated log-likelihood -1969.267 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 27 
+Using 153 Simulations 
+Best parameters 2.103 1.006 8.068 with estimated log-likelihood -1947.422 
+
+----------------- 
+Step No 28 
+Using 97 Simulations 
+Best parameters 1.8 0.944 8.249 with estimated log-likelihood -1958.278 
+
+----------------- 
+Step No 29 
+Using 109 Simulations 
+Best parameters 2.103 0.951 7.9 with estimated log-likelihood -1964.24 
+
+----------------- 
+Step No 30 
+Using 131 Simulations 
+Best parameters 2.401 0.978 7.965 with estimated log-likelihood -1961.73 
+
+----------------- 
+Step No 31 
+Using 127 Simulations 
+Best parameters 2.2 0.977 8.07 with estimated log-likelihood -1971.645 
+
+----------------- 
+Step No 32 
+Using 168 Simulations 
+Best parameters 1.935 0.991 8.243 with estimated log-likelihood -1960.884 
+
+----------------- 
+Step No 33 
+Using 143 Simulations 
+Best parameters 1.821 0.989 8.332 with estimated log-likelihood -1979.739 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 34 
+Using 170 Simulations 
+Best parameters 2.127 0.995 7.866 with estimated log-likelihood -1958.415 
+
+----------------- 
+Step No 35 
+Using 138 Simulations 
+Best parameters 2.363 0.99 7.785 with estimated log-likelihood -1972.3 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 36 
+Using 148 Simulations 
+Best parameters 2.76 0.962 7.431 with estimated log-likelihood -1955.45 
+
+----------------- 
+Step No 37 
+Using 111 Simulations 
+Best parameters 2.561 0.995 7.53 with estimated log-likelihood -1970.749 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 38 
+Using 139 Simulations 
+Best parameters 2.991 1.019 7.599 with estimated log-likelihood -1967.448 
+
+----------------- 
+Step No 39 
+Using 136 Simulations 
+Best parameters 2.561 1.076 7.811 with estimated log-likelihood -1950.068 
+
+----------------- 
+Step No 40 
+Using 127 Simulations 
+Best parameters 2.991 0.998 7.669 with estimated log-likelihood -1948.819 
+
+----------------- 
+Step No 41 
+Using 139 Simulations 
+Best parameters 2.561 0.982 7.83 with estimated log-likelihood -1961.772 
+
+----------------- 
+Step No 42 
+Using 153 Simulations 
+Best parameters 2.433 0.987 7.955 with estimated log-likelihood -1965.499 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 43 
+Using 173 Simulations 
+Best parameters 2.594 1.015 7.648 with estimated log-likelihood -1953.267 
+
+----------------- 
+Step No 44 
+Using 181 Simulations 
+Best parameters 2.221 1.05 7.795 with estimated log-likelihood -1967.138 
+
+----------------- 
+Step No 45 
+Using 149 Simulations 
+Best parameters 2.049 1.005 7.98 with estimated log-likelihood -1965.226 
+
+----------------- 
+Step No 46 
+Using 138 Simulations 
+Best parameters 2.221 1.006 7.644 with estimated log-likelihood -1971.559 
+
+----------------- 
+Step No 47 
+Using 163 Simulations 
+Best parameters 2.387 0.943 7.714 with estimated log-likelihood -1958.807 
+
+----------------- 
+Step No 48 
+Using 150 Simulations 
+Best parameters 2.247 0.999 7.893 with estimated log-likelihood -1958.085 
+
+----------------- 
+Step No 49 
+Using 169 Simulations 
+Best parameters 2.009 0.984 7.909 with estimated log-likelihood -1959.492 
+
+----------------- 
+Step No 50 
+Using 179 Simulations 
+Best parameters 2.095 1.06 7.983 with estimated log-likelihood -1958.394 
+
+----------------- 
+Step No 51 
+Using 156 Simulations 
+Best parameters 1.94 1.066 8.084 with estimated log-likelihood -1970.637 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 52 
+Using 170 Simulations 
+Best parameters 2.038 0.989 8.072 with estimated log-likelihood -1957.48 
+
+----------------- 
+Step No 53 
+Using 186 Simulations 
+Best parameters 2.195 0.988 8.038 with estimated log-likelihood -1966.556 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 54 
+Using 216 Simulations 
+Best parameters 2.02 0.986 8.117 with estimated log-likelihood -1963.475 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 55 
+Using 250 Simulations 
+Best parameters 2.129 0.974 7.948 with estimated log-likelihood -1964.037 
+No sigificant score changes in the last 3 Step(s) 
+
+----------------- 
+Step No 56 
+Using 263 Simulations 
+Best parameters 2.291 1.013 7.986 with estimated log-likelihood -1969.122 
+
+----------------- 
+Step No 57 
+Using 237 Simulations 
+Best parameters 2.414 1.021 7.751 with estimated log-likelihood -1969.402 
+
+----------------- 
+Step No 58 
+Using 195 Simulations 
+Best parameters 2.819 0.995 7.652 with estimated log-likelihood -1963.885 
+
+----------------- 
+Step No 59 
+Using 128 Simulations 
+Best parameters 2.667 0.96 7.509 with estimated log-likelihood -1957.229 
+
+----------------- 
+Step No 60 
+Using 147 Simulations 
+Best parameters 2.595 1.021 7.579 with estimated log-likelihood -1964.96 
+
+----------------- 
+Step No 61 
+Using 172 Simulations 
+Best parameters 2.825 0.948 7.558 with estimated log-likelihood -1958.051 
+
+----------------- 
+Step No 62 
+Using 179 Simulations 
+Best parameters 2.418 0.965 8.005 with estimated log-likelihood -1948.301 
+
+----------------- 
+Step No 63 
+Using 143 Simulations 
+Best parameters 2.482 0.939 7.953 with estimated log-likelihood -1970.215 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 64 
+Using 196 Simulations 
+Best parameters 2.124 1.004 8.043 with estimated log-likelihood -1961.736 
+
+----------------- 
+Step No 65 
+Using 135 Simulations 
+Best parameters 2.482 0.989 7.85 with estimated log-likelihood -1960.158 
+
+----------------- 
+Step No 66 
+Using 153 Simulations 
+Best parameters 2.125 0.955 7.829 with estimated log-likelihood -1965.274 
+
+----------------- 
+Step No 67 
+Using 174 Simulations 
+Best parameters 2.222 1.012 8.01 with estimated log-likelihood -1965.606 
+
+----------------- 
+Step No 68 
+Using 202 Simulations 
+Best parameters 2.037 0.988 8.061 with estimated log-likelihood -1964.717 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 69 
+Using 207 Simulations 
+Best parameters 2.257 0.984 7.886 with estimated log-likelihood -1964.38 
+
+----------------- 
+Step No 70 
+Using 234 Simulations 
+Best parameters 2.463 1.048 7.736 with estimated log-likelihood -1961.662 
+
+----------------- 
+Step No 71 
+Using 167 Simulations 
+Best parameters 2.108 1.038 8.009 with estimated log-likelihood -1955.325 
+
+----------------- 
+Step No 72 
+Using 182 Simulations 
+Best parameters 2.307 1.015 8.174 with estimated log-likelihood -1969.931 
+
+----------------- 
+Step No 73 
+Using 186 Simulations 
+Best parameters 2.695 1.008 7.717 with estimated log-likelihood -1954.219 
+
+----------------- 
+Step No 74 
+Using 130 Simulations 
+Best parameters 2.307 1.002 7.997 with estimated log-likelihood -1962.034 
+
+----------------- 
+Step No 75 
+Using 159 Simulations 
+Best parameters 2.695 0.977 7.55 with estimated log-likelihood -1950.588 
+
+----------------- 
+Step No 76 
+Using 148 Simulations 
+Best parameters 2.63 0.99 7.811 with estimated log-likelihood -1967.233 
+
+----------------- 
+Step No 77 
+Using 200 Simulations 
+Best parameters 2.727 0.983 7.59 with estimated log-likelihood -1964.485 
+
+----------------- 
+Step No 78 
+Using 246 Simulations 
+Best parameters 3.033 1.033 7.369 with estimated log-likelihood -1967.118 
+
+----------------- 
+Step No 79 
+Using 145 Simulations 
+Best parameters 3.265 1 7.705 with estimated log-likelihood -1964.08 
+
+----------------- 
+Step No 80 
+Using 139 Simulations 
+Best parameters 3.13 0.949 7.453 with estimated log-likelihood -1962.09 
+
+----------------- 
+Step No 81 
+Using 143 Simulations 
+Best parameters 3.233 1.003 7.666 with estimated log-likelihood -1965.537 
+
+----------------- 
+Step No 82 
+Using 170 Simulations 
+Best parameters 3.735 1.052 7.355 with estimated log-likelihood -1948.14 
+
+----------------- 
+Step No 83 
+Using 109 Simulations 
+Best parameters 3.719 1.041 7.69 with estimated log-likelihood -1966.779 
+
+----------------- 
+Step No 84 
+Using 143 Simulations 
+Best parameters 3.498 1.017 7.27 with estimated log-likelihood -1967.082 
+
+----------------- 
+Step No 85 
+Using 145 Simulations 
+Best parameters 2.994 1.006 7.426 with estimated log-likelihood -1971.135 
+
+----------------- 
+Step No 86 
+Using 141 Simulations 
+Best parameters 2.959 0.966 7.658 with estimated log-likelihood -1975.976 
+
+----------------- 
+Step No 87 
+Using 149 Simulations 
+Best parameters 3.286 1.041 7.565 with estimated log-likelihood -1959.296 
+
+----------------- 
+Step No 88 
+Using 143 Simulations 
+Best parameters 3.085 1.045 7.65 with estimated log-likelihood -1966.929 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 89 
+Using 195 Simulations 
+Best parameters 2.922 1 7.629 with estimated log-likelihood -1968.017 
+
+----------------- 
+Step No 90 
+Using 212 Simulations 
+Best parameters 3.096 1.069 7.6 with estimated log-likelihood -1967.315 
+
+----------------- 
+Step No 91 
+Using 214 Simulations 
+Best parameters 2.93 0.992 7.756 with estimated log-likelihood -1961.861 
+
+----------------- 
+Step No 92 
+Using 217 Simulations 
+Best parameters 2.546 0.966 7.689 with estimated log-likelihood -1970.869 
+
+----------------- 
+Step No 93 
+Using 148 Simulations 
+Best parameters 2.491 1.027 7.839 with estimated log-likelihood -1960.555 
+
+----------------- 
+Step No 94 
+Using 147 Simulations 
+Best parameters 2.678 1.033 7.709 with estimated log-likelihood -1961.727 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 95 
+Using 182 Simulations 
+Best parameters 2.479 1.006 7.83 with estimated log-likelihood -1964.684 
+
+----------------- 
+Step No 96 
+Using 210 Simulations 
+Best parameters 2.896 1.005 7.618 with estimated log-likelihood -1964.406 
+
+----------------- 
+Step No 97 
+Using 180 Simulations 
+Best parameters 3.19 1.029 7.508 with estimated log-likelihood -1968.312 
+
+----------------- 
+Step No 98 
+Using 158 Simulations 
+Best parameters 2.731 1.035 7.874 with estimated log-likelihood -1962.681 
+
+----------------- 
+Step No 99 
+Using 153 Simulations 
+Best parameters 2.428 1.019 8.013 with estimated log-likelihood -1966.94 
+
+----------------- 
+Step No 100 
+Using 142 Simulations 
+Best parameters 2.674 0.973 7.721 with estimated log-likelihood -1965.316 
+
+----------------- 
+Step No 101 
+Using 150 Simulations 
+Best parameters 2.95 0.968 7.639 with estimated log-likelihood -1968.412 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 102 
+Using 160 Simulations 
+Best parameters 2.667 1.001 7.647 with estimated log-likelihood -1970.881 
+
+----------------- 
+Step No 103 
+Using 193 Simulations 
+Best parameters 2.834 0.978 7.592 with estimated log-likelihood -1971.981 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 104 
+Using 229 Simulations 
+Best parameters 3.311 0.955 7.409 with estimated log-likelihood -1961.6 
+
+----------------- 
+Step No 105 
+Using 142 Simulations 
+Best parameters 2.834 1.003 7.696 with estimated log-likelihood -1961.517 
+
+----------------- 
+Step No 106 
+Using 141 Simulations 
+Best parameters 2.426 0.956 7.898 with estimated log-likelihood -1962.396 
+
+----------------- 
+Step No 107 
+Using 104 Simulations 
+Best parameters 2.193 0.968 7.836 with estimated log-likelihood -1971.263 
+
+----------------- 
+Step No 108 
+Using 123 Simulations 
+Best parameters 2.183 1.021 8.05 with estimated log-likelihood -1958.961 
+
+----------------- 
+Step No 109 
+Using 138 Simulations 
+Best parameters 1.908 1.001 8.213 with estimated log-likelihood -1963.473 
+
+----------------- 
+Step No 110 
+Using 136 Simulations 
+Best parameters 1.968 0.949 8.141 with estimated log-likelihood -1971.794 
+
+----------------- 
+Step No 111 
+Using 158 Simulations 
+Best parameters 2.256 1.023 7.966 with estimated log-likelihood -1952.224 
+
+----------------- 
+Step No 112 
+Using 148 Simulations 
+Best parameters 2.536 1.001 8.024 with estimated log-likelihood -1966.826 
+
+----------------- 
+Step No 113 
+Using 138 Simulations 
+Best parameters 2.466 0.964 7.777 with estimated log-likelihood -1966.058 
+
+----------------- 
+Step No 114 
+Using 148 Simulations 
+Best parameters 2.494 0.986 7.912 with estimated log-likelihood -1957.863 
+
+----------------- 
+Step No 115 
+Using 204 Simulations 
+Best parameters 2.732 0.949 7.623 with estimated log-likelihood -1960.088 
+
+----------------- 
+Step No 116 
+Using 165 Simulations 
+Best parameters 2.762 0.979 7.631 with estimated log-likelihood -1966.581 
+
+----------------- 
+Step No 117 
+Using 218 Simulations 
+Best parameters 2.364 1.036 7.802 with estimated log-likelihood -1959.609 
+
+----------------- 
+Step No 118 
+Using 140 Simulations 
+Best parameters 2.024 0.994 8.124 with estimated log-likelihood -1958.593 
+
+----------------- 
+Step No 119 
+Using 108 Simulations 
+Best parameters 1.979 0.982 8.3 with estimated log-likelihood -1963.945 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 120 
+Using 153 Simulations 
+Best parameters 2.228 1.025 8.16 with estimated log-likelihood -1966.808 
+
+----------------- 
+Step No 121 
+Using 153 Simulations 
+Best parameters 2.34 1 7.878 with estimated log-likelihood -1962.208 
+
+----------------- 
+Step No 122 
+Using 161 Simulations 
+Best parameters 2.511 0.974 7.866 with estimated log-likelihood -1968.694 
+
+----------------- 
+Step No 123 
+Using 170 Simulations 
+Best parameters 2.219 0.968 8.01 with estimated log-likelihood -1966.728 
+
+----------------- 
+Step No 124 
+Using 189 Simulations 
+Best parameters 2.218 0.984 8.118 with estimated log-likelihood -1966.073 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 125 
+Using 243 Simulations 
+Best parameters 2.04 0.997 8.096 with estimated log-likelihood -1966.509 
+
+----------------- 
+Step No 126 
+Using 235 Simulations 
+Best parameters 2.383 1.017 7.786 with estimated log-likelihood -1953.22 
+
+----------------- 
+Step No 127 
+Using 179 Simulations 
+Best parameters 2.249 1.036 8.016 with estimated log-likelihood -1969.355 
+
+----------------- 
+Step No 128 
+Using 206 Simulations 
+Best parameters 2.366 0.987 7.861 with estimated log-likelihood -1971.942 
+
+----------------- 
+Step No 129 
+Using 230 Simulations 
+Best parameters 2.051 0.978 8.035 with estimated log-likelihood -1965.189 
+
+----------------- 
+Step No 130 
+Using 235 Simulations 
+Best parameters 2.283 0.967 7.799 with estimated log-likelihood -1971.415 
+
+----------------- 
+Step No 131 
+Using 252 Simulations 
+Best parameters 2.474 1.042 7.918 with estimated log-likelihood -1957.728 
+
+----------------- 
+Step No 132 
+Using 209 Simulations 
+Best parameters 2.251 1.01 8.046 with estimated log-likelihood -1965.388 
+
+----------------- 
+Step No 133 
+Using 239 Simulations 
+Best parameters 2.361 1.011 7.834 with estimated log-likelihood -1966.659 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 134 
+Using 282 Simulations 
+Best parameters 2.308 1.014 7.836 with estimated log-likelihood -1969.819 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 135 
+Using 354 Simulations 
+Best parameters 2.366 0.984 7.762 with estimated log-likelihood -1972.756 
+No sigificant score changes in the last 3 Step(s) 
+
+----------------- 
+Step No 136 
+Using 352 Simulations 
+Best parameters 2.075 0.979 7.891 with estimated log-likelihood -1969.203 
+
+----------------- 
+Step No 137 
+Using 316 Simulations 
+Best parameters 2.146 1.035 8.066 with estimated log-likelihood -1964.665 
+
+----------------- 
+Step No 138 
+Using 300 Simulations 
+Best parameters 2.507 0.994 7.787 with estimated log-likelihood -1952.779 
+
+----------------- 
+Step No 139 
+Using 261 Simulations 
+Best parameters 2.892 1.01 7.621 with estimated log-likelihood -1967.319 
+
+----------------- 
+Step No 140 
+Using 114 Simulations 
+Best parameters 2.505 0.993 7.676 with estimated log-likelihood -1964.229 
+
+----------------- 
+Step No 141 
+Using 143 Simulations 
+Best parameters 2.719 0.977 7.886 with estimated log-likelihood -1963.605 
+
+----------------- 
+Step No 142 
+Using 171 Simulations 
+Best parameters 2.614 0.989 7.732 with estimated log-likelihood -1967.568 
+
+----------------- 
+Step No 143 
+Using 217 Simulations 
+Best parameters 3.054 1.045 7.644 with estimated log-likelihood -1965.156 
+
+----------------- 
+Step No 144 
+Using 156 Simulations 
+Best parameters 3.229 0.979 7.602 with estimated log-likelihood -1969.954 
+
+----------------- 
+Step No 145 
+Using 155 Simulations 
+Best parameters 2.764 0.972 7.513 with estimated log-likelihood -1969.478 
+
+----------------- 
+Step No 146 
+Using 166 Simulations 
+Best parameters 3.051 0.966 7.544 with estimated log-likelihood -1967.512 
+
+----------------- 
+Step No 147 
+Using 213 Simulations 
+Best parameters 3.564 0.986 7.419 with estimated log-likelihood -1961.88 
+
+----------------- 
+Step No 148 
+Using 128 Simulations 
+Best parameters 3.358 1.016 7.596 with estimated log-likelihood -1976.367 
+
+----------------- 
+Step No 149 
+Using 160 Simulations 
+Best parameters 3.637 0.966 7.446 with estimated log-likelihood -1961.875 
+
+----------------- 
+Step No 150 
+Using 162 Simulations 
+Best parameters 3.114 0.926 7.561 with estimated log-likelihood -1962.987 
+
+----------------- 
+Step No 151 
+Using 130 Simulations 
+Best parameters 2.666 0.991 7.922 with estimated log-likelihood -1965.952 
+
+----------------- 
+Step No 152 
+Using 98 Simulations 
+Best parameters 2.992 0.932 7.551 with estimated log-likelihood -1960.452 
+
+----------------- 
+Step No 153 
+Using 114 Simulations 
+Best parameters 2.561 0.955 7.738 with estimated log-likelihood -1963.604 
+
+----------------- 
+Step No 154 
+Using 132 Simulations 
+Best parameters 2.403 1.03 7.92 with estimated log-likelihood -1964.61 
+
+----------------- 
+Step No 155 
+Using 120 Simulations 
+Best parameters 2.72 1.024 7.76 with estimated log-likelihood -1970.773 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 156 
+Using 156 Simulations 
+Best parameters 3.075 0.982 7.378 with estimated log-likelihood -1962.501 
+
+----------------- 
+Step No 157 
+Using 116 Simulations 
+Best parameters 2.633 1.009 7.763 with estimated log-likelihood -1954.818 
+
+----------------- 
+Step No 158 
+Using 133 Simulations 
+Best parameters 3.037 0.997 7.517 with estimated log-likelihood -1963.453 
+
+----------------- 
+Step No 159 
+Using 166 Simulations 
+Best parameters 3.105 1.016 7.648 with estimated log-likelihood -1966.205 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 160 
+Using 215 Simulations 
+Best parameters 2.915 1.028 7.933 with estimated log-likelihood -1964.897 
+
+----------------- 
+Step No 161 
+Using 203 Simulations 
+Best parameters 2.655 1.003 7.713 with estimated log-likelihood -1967.784 
+
+----------------- 
+Step No 162 
+Using 209 Simulations 
+Best parameters 3.022 1.013 7.611 with estimated log-likelihood -1965.194 
+
+----------------- 
+Step No 163 
+Using 235 Simulations 
+Best parameters 2.95 1.011 7.622 with estimated log-likelihood -1971.623 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 164 
+Using 302 Simulations 
+Best parameters 2.623 0.994 7.819 with estimated log-likelihood -1961.142 
+
+----------------- 
+Step No 165 
+Using 277 Simulations 
+Best parameters 2.432 1.034 7.819 with estimated log-likelihood -1966.913 
+
+----------------- 
+Step No 166 
+Using 217 Simulations 
+Best parameters 2.644 1.02 7.642 with estimated log-likelihood -1969.96 
+
+----------------- 
+Step No 167 
+Using 242 Simulations 
+Best parameters 2.89 0.975 7.611 with estimated log-likelihood -1959.977 
+
+----------------- 
+Step No 168 
+Using 226 Simulations 
+Best parameters 3.101 1.051 7.72 with estimated log-likelihood -1958.757 
+
+----------------- 
+Step No 169 
+Using 193 Simulations 
+Best parameters 2.655 0.999 7.573 with estimated log-likelihood -1960.35 
+
+----------------- 
+Step No 170 
+Using 206 Simulations 
+Best parameters 2.586 0.994 7.777 with estimated log-likelihood -1968.373 
+
+----------------- 
+Step No 171 
+Using 237 Simulations 
+Best parameters 2.214 0.987 7.97 with estimated log-likelihood -1959.068 
+
+----------------- 
+Step No 172 
+Using 132 Simulations 
+Best parameters 1.899 0.981 7.85 with estimated log-likelihood -1959.589 
+
+----------------- 
+Step No 173 
+Using 122 Simulations 
+Best parameters 1.871 0.957 8.208 with estimated log-likelihood -1965.085 
+
+----------------- 
+Step No 174 
+Using 136 Simulations 
+Best parameters 1.778 1.031 8.007 with estimated log-likelihood -1958.462 
+
+----------------- 
+Step No 175 
+Using 131 Simulations 
+Best parameters 2.077 1.068 8.095 with estimated log-likelihood -1965.705 
+
+----------------- 
+Step No 176 
+Using 133 Simulations 
+Best parameters 2.184 1.012 7.924 with estimated log-likelihood -1960.29 
+
+----------------- 
+Step No 177 
+Using 146 Simulations 
+Best parameters 2.014 0.999 8.068 with estimated log-likelihood -1963.205 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 178 
+Using 182 Simulations 
+Best parameters 2.173 0.977 8.017 with estimated log-likelihood -1964.061 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 179 
+Using 210 Simulations 
+Best parameters 2.378 1.018 7.983 with estimated log-likelihood -1965.498 
+
+----------------- 
+Step No 180 
+Using 174 Simulations 
+Best parameters 2.47 1.022 7.864 with estimated log-likelihood -1964.662 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 181 
+Using 187 Simulations 
+Best parameters 2.566 1.017 7.907 with estimated log-likelihood -1964.884 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 182 
+Using 223 Simulations 
+Best parameters 2.553 0.961 7.809 with estimated log-likelihood -1959.946 
+
+----------------- 
+Step No 183 
+Using 212 Simulations 
+Best parameters 2.982 0.953 7.456 with estimated log-likelihood -1955.664 
+
+----------------- 
+Step No 184 
+Using 121 Simulations 
+Best parameters 2.625 0.96 7.489 with estimated log-likelihood -1975.58 
+
+----------------- 
+Step No 185 
+Using 163 Simulations 
+Best parameters 2.517 0.995 7.641 with estimated log-likelihood -1963.895 
+
+----------------- 
+Step No 186 
+Using 182 Simulations 
+Best parameters 2.94 1.02 7.641 with estimated log-likelihood -1959.677 
+
+----------------- 
+Step No 187 
+Using 176 Simulations 
+Best parameters 2.54 1.026 7.864 with estimated log-likelihood -1963.85 
+
+----------------- 
+Step No 188 
+Using 182 Simulations 
+Best parameters 2.289 1.008 7.977 with estimated log-likelihood -1959.474 
+
+----------------- 
+Step No 189 
+Using 165 Simulations 
+Best parameters 2.321 0.971 7.944 with estimated log-likelihood -1964.851 
+
+----------------- 
+Step No 190 
+Using 194 Simulations 
+Best parameters 2.449 0.976 7.929 with estimated log-likelihood -1969.52 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 191 
+Using 245 Simulations 
+Best parameters 2.455 1.051 7.977 with estimated log-likelihood -1959.059 
+
+----------------- 
+Step No 192 
+Using 221 Simulations 
+Best parameters 2.101 1.009 7.99 with estimated log-likelihood -1958.892 
+
+----------------- 
+Step No 193 
+Using 172 Simulations 
+Best parameters 1.902 1.004 8.097 with estimated log-likelihood -1968.591 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 194 
+Using 158 Simulations 
+Best parameters 1.968 1.006 8.287 with estimated log-likelihood -1970.967 
+
+----------------- 
+Step No 195 
+Using 192 Simulations 
+Best parameters 2.053 1.034 8.091 with estimated log-likelihood -1970.969 
+
+----------------- 
+Step No 196 
+Using 207 Simulations 
+Best parameters 2.086 1.002 7.899 with estimated log-likelihood -1977.725 
+
+----------------- 
+Step No 197 
+Using 224 Simulations 
+Best parameters 2.372 1.08 7.852 with estimated log-likelihood -1960.427 
+
+----------------- 
+Step No 198 
+Using 144 Simulations 
+Best parameters 2.031 1.026 7.97 with estimated log-likelihood -1969.81 
+
+----------------- 
+Step No 199 
+Using 166 Simulations 
+Best parameters 2.048 1.008 8.032 with estimated log-likelihood -1980.907 
+No sigificant score changes in the last 1 Step(s) 
+
+Maximimum number of search steps 200 reached.
+ 
+
+Calculating log-composite-likelihoods for best estimates: 
+* Parameter combination 1 of 10 
+* Parameter combination 2 of 10 
+* Parameter combination 3 of 10 
+* Parameter combination 4 of 10 
+* Parameter combination 5 of 10 
+* Parameter combination 6 of 10 
+* Parameter combination 7 of 10 
+* Parameter combination 8 of 10 
+* Parameter combination 9 of 10 
+* Parameter combination 10 of 10 
+
+
+Best log-composite-likelihood values are: 
+      log.cl block t_split_1         M    theta
+6  -1625.676     1  2.944771 0.9868248 7.487744
+1  -1626.578     2  2.383309 1.0165901 7.785979
+3  -1633.347     2  2.694724 0.9771184 7.549581
+10 -1634.513     1  2.679702 1.0142123 7.730975
+3  -1635.104     1  2.679702 1.0142123 7.730975

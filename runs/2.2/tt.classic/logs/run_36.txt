@@ -1,0 +1,258 @@
+----------------------------------------------------------------------
+Run 36 of 54 
+Real parameters: 3.7525 1.525 3.25 
+----------------------------------------------------------------------
+*** Searching starting positions *** 
+Creating initial blocks ...  
+*** Block 1 : 0.01-0.224 x 0.1-0.447 x 1-3.162 
+Best parameters 0.18 0.447 3.162 with estimated log-likelihood -507.864 
+
+*** Block 2 : 0.01-0.224 x 0.1-0.447 x 3.162-10 
+Best parameters 0.079 0.1 5.996 with estimated log-likelihood -186.101 
+
+*** Block 3 : 0.01-0.224 x 0.447-2 x 1-3.162 
+Best parameters 0.224 1.689 3.162 with estimated log-likelihood -393.518 
+
+*** Block 4 : 0.01-0.224 x 0.447-2 x 3.162-10 
+Best parameters 0.099 0.447 5.682 with estimated log-likelihood -170.925 
+
+*** Block 5 : 0.224-5 x 0.1-0.447 x 1-3.162 
+Best parameters 0.556 0.447 3.162 with estimated log-likelihood -502.912 
+
+*** Block 6 : 0.224-5 x 0.1-0.447 x 3.162-10 
+Best parameters 0.224 0.447 4.537 with estimated log-likelihood -368.491 
+
+*** Block 7 : 0.224-5 x 0.447-2 x 1-3.162 
+Best parameters 3.932 1.812 3.162 with estimated log-likelihood -62.399 
+
+*** Block 8 : 0.224-5 x 0.447-2 x 3.162-10 
+Best parameters 3.543 1.788 3.219 with estimated log-likelihood -63.129 
+
+     log.likelihood t_split_1     M theta
+[1,]        -62.399     3.932 1.812 3.162
+[2,]        -63.129     3.543 1.788 3.219
+[3,]       -170.925     0.099 0.447 5.682
+[4,]       -186.101     0.079 0.100 5.996
+[5,]       -368.491     0.224 0.447 4.537
+[6,]       -393.518     0.224 1.689 3.162
+[7,]       -502.912     0.556 0.447 3.162
+[8,]       -507.864     0.180 0.447 3.162
+*** Search with starting Point in Block 1 of 2 **** 
+----------------- 
+Step No 1 
+Using 83 Simulations 
+Best parameters 3.366 1.681 3.341 with estimated log-likelihood -60.801 
+
+----------------- 
+Step No 2 
+Using 92 Simulations 
+Best parameters 3.932 1.703 3.28 with estimated log-likelihood -61.952 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 3 
+Using 120 Simulations 
+Best parameters 4.046 1.695 3.365 with estimated log-likelihood -62.396 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 4 
+Using 155 Simulations 
+Best parameters 4.718 1.616 3.299 with estimated log-likelihood -60.076 
+
+----------------- 
+Step No 5 
+Using 143 Simulations 
+Best parameters 4.806 1.595 3.319 with estimated log-likelihood -60.624 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 6 
+Using 201 Simulations 
+Best parameters 4.062 1.674 3.376 with estimated log-likelihood -61.769 
+
+----------------- 
+Step No 7 
+Using 206 Simulations 
+Best parameters 4.745 1.605 3.327 with estimated log-likelihood -62.255 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 8 
+Using 251 Simulations 
+Best parameters 5 1.647 3.306 with estimated log-likelihood -60.544 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 9 
+Using 309 Simulations 
+Best parameters 4.807 1.634 3.251 with estimated log-likelihood -61.175 
+No sigificant score changes in the last 3 Step(s) 
+
+----------------- 
+Step No 10 
+Using 331 Simulations 
+Best parameters 4.526 1.703 3.288 with estimated log-likelihood -62.382 
+No sigificant score changes in the last 4 Step(s) 
+
+----------------- 
+Step No 11 
+Using 346 Simulations 
+Best parameters 4.411 1.626 3.334 with estimated log-likelihood -63.33 
+No sigificant score changes in the last 5 Step(s) 
+
+*** Finished search *** 
+Score has not change much in the last 5 steps. 
+Seems we have converged. 
+
+Calculating log-composite-likelihoods for best estimates: 
+* Parameter combination 1 of 10 
+* Parameter combination 2 of 10 
+* Parameter combination 3 of 10 
+* Parameter combination 4 of 10 
+* Parameter combination 5 of 10 
+* Parameter combination 6 of 10 
+* Parameter combination 7 of 10 
+* Parameter combination 8 of 10 
+* Parameter combination 9 of 10 
+* Parameter combination 10 of 10 
+
+*** Search with starting Point in Block 2 of 2 **** 
+----------------- 
+Step No 1 
+Using 83 Simulations 
+Best parameters 3.626 1.682 3.337 with estimated log-likelihood -61.908 
+
+----------------- 
+Step No 2 
+Using 110 Simulations 
+Best parameters 3.8 1.685 3.348 with estimated log-likelihood -62.175 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 3 
+Using 169 Simulations 
+Best parameters 3.254 1.695 3.336 with estimated log-likelihood -61.927 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 4 
+Using 165 Simulations 
+Best parameters 3.8 1.723 3.272 with estimated log-likelihood -61.139 
+
+----------------- 
+Step No 5 
+Using 169 Simulations 
+Best parameters 4.392 1.688 3.229 with estimated log-likelihood -61.507 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 6 
+Using 141 Simulations 
+Best parameters 4.598 1.697 3.336 with estimated log-likelihood -61.194 
+
+----------------- 
+Step No 7 
+Using 186 Simulations 
+Best parameters 4.423 1.596 3.291 with estimated log-likelihood -61.078 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 8 
+Using 190 Simulations 
+Best parameters 5 1.654 3.275 with estimated log-likelihood -60.499 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 9 
+Using 250 Simulations 
+Best parameters 4.941 1.67 3.254 with estimated log-likelihood -60.023 
+No sigificant score changes in the last 3 Step(s) 
+
+----------------- 
+Step No 10 
+Using 304 Simulations 
+Best parameters 4.337 1.569 3.299 with estimated log-likelihood -62.28 
+
+----------------- 
+Step No 11 
+Using 293 Simulations 
+Best parameters 4.669 1.527 3.347 with estimated log-likelihood -61.844 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 12 
+Using 259 Simulations 
+Best parameters 3.809 1.646 3.367 with estimated log-likelihood -60.635 
+
+----------------- 
+Step No 13 
+Using 204 Simulations 
+Best parameters 3.806 1.588 3.336 with estimated log-likelihood -63.351 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 14 
+Using 257 Simulations 
+Best parameters 3.988 1.646 3.381 with estimated log-likelihood -62.002 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 15 
+Using 285 Simulations 
+Best parameters 3.945 1.538 3.279 with estimated log-likelihood -59.428 
+
+----------------- 
+Step No 16 
+Using 272 Simulations 
+Best parameters 3.699 1.61 3.303 with estimated log-likelihood -63.445 
+No sigificant score changes in the last 1 Step(s) 
+
+----------------- 
+Step No 17 
+Using 288 Simulations 
+Best parameters 3.583 1.539 3.353 with estimated log-likelihood -62.313 
+No sigificant score changes in the last 2 Step(s) 
+
+----------------- 
+Step No 18 
+Using 286 Simulations 
+Best parameters 3.3 1.564 3.364 with estimated log-likelihood -63.221 
+No sigificant score changes in the last 3 Step(s) 
+
+----------------- 
+Step No 19 
+Using 240 Simulations 
+Best parameters 3.391 1.631 3.342 with estimated log-likelihood -61.738 
+No sigificant score changes in the last 4 Step(s) 
+
+----------------- 
+Step No 20 
+Using 263 Simulations 
+Best parameters 3.2 1.6 3.325 with estimated log-likelihood -63.327 
+No sigificant score changes in the last 5 Step(s) 
+
+*** Finished search *** 
+Score has not change much in the last 5 steps. 
+Seems we have converged. 
+
+Calculating log-composite-likelihoods for best estimates: 
+* Parameter combination 1 of 10 
+* Parameter combination 2 of 10 
+* Parameter combination 3 of 10 
+* Parameter combination 4 of 10 
+* Parameter combination 5 of 10 
+* Parameter combination 6 of 10 
+* Parameter combination 7 of 10 
+* Parameter combination 8 of 10 
+* Parameter combination 9 of 10 
+* Parameter combination 10 of 10 
+
+
+Best log-composite-likelihood values are: 
+     log.cl block t_split_1        M    theta
+4 -61.54045     1  4.717568 1.616429 3.299173
+8 -61.66680     1  5.000000 1.647440 3.306257
+1 -62.52747     1  3.366112 1.681321 3.340820
+3 -62.62649     2  3.809376 1.645840 3.367308
+8 -62.67406     2  5.000000 1.654281 3.275075

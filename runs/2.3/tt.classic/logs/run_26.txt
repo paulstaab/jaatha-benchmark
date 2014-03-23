@@ -1,0 +1,377 @@
+----------------------------------------------------------------------
+Run 26 of 54 
+Real parameters: 2.505 1.525 7.75 
+----------------------------------------------------------------------
+*** Searching starting positions *** 
+Creating initial blocks ...  
+*** Block 1 : 0.01-0.224 x 0.1-0.447 x 1-3.162 
+Best parameters 0.224 0.103 3.162 with estimated log-likelihood -3449.507 
+
+*** Block 2 : 0.01-0.224 x 0.1-0.447 x 3.162-10 
+Best parameters 0.135 0.1 10 with estimated log-likelihood -513.372 
+
+*** Block 3 : 0.01-0.224 x 0.447-2 x 1-3.162 
+Best parameters 0.224 0.447 3.162 with estimated log-likelihood -3223.415 
+
+*** Block 4 : 0.01-0.224 x 0.447-2 x 3.162-10 
+Best parameters 0.177 0.447 10 with estimated log-likelihood -395.154 
+
+*** Block 5 : 0.224-5 x 0.1-0.447 x 1-3.162 
+Best parameters 3.691 0.447 3.162 with estimated log-likelihood -2563.514 
+
+*** Block 6 : 0.224-5 x 0.1-0.447 x 3.162-10 
+Best parameters 0.261 0.447 10 with estimated log-likelihood -663.515 
+
+*** Block 7 : 0.224-5 x 0.447-2 x 1-3.162 
+Best parameters 5 2 3.162 with estimated log-likelihood -1444.045 
+
+*** Block 8 : 0.224-5 x 0.447-2 x 3.162-10 
+Best parameters 3.176 1.566 7.652 with estimated log-likelihood -108.196 
+
+     log.likelihood t_split_1     M  theta
+[1,]       -108.196     3.176 1.566  7.652
+[2,]       -395.154     0.177 0.447 10.000
+[3,]       -513.372     0.135 0.100 10.000
+[4,]       -663.515     0.261 0.447 10.000
+[5,]      -1444.045     5.000 2.000  3.162
+[6,]      -2563.514     3.691 0.447  3.162
+[7,]      -3223.415     0.224 0.447  3.162
+[8,]      -3449.507     0.224 0.103  3.162
+*** Search with starting Point in Block 1 of 2 **** 
+----------------- 
+Step No 1 
+Best parameters 3.176 1.566 7.652 with estimated log-likelihood -125.285 
+
+----------------- 
+Step No 2 
+Best parameters 3.71 1.539 7.399 with estimated log-likelihood -119.295 
+
+----------------- 
+Step No 3 
+Best parameters 3.176 1.428 7.604 with estimated log-likelihood -120.346 
+
+----------------- 
+Step No 4 
+Best parameters 2.719 1.507 7.907 with estimated log-likelihood -123.947 
+
+----------------- 
+Step No 5 
+Best parameters 2.731 1.604 7.824 with estimated log-likelihood -124.257 
+
+----------------- 
+Step No 6 
+Best parameters 2.704 1.493 7.93 with estimated log-likelihood -119.037 
+
+----------------- 
+Step No 7 
+Best parameters 2.315 1.393 7.856 with estimated log-likelihood -124.045 
+
+----------------- 
+Step No 8 
+Best parameters 2.568 1.292 7.702 with estimated log-likelihood -119.694 
+
+----------------- 
+Step No 9 
+Best parameters 2.198 1.387 8.087 with estimated log-likelihood -117.92 
+
+----------------- 
+Step No 10 
+Best parameters 1.882 1.467 8.136 with estimated log-likelihood -116.284 
+
+----------------- 
+Step No 11 
+Best parameters 2.162 1.476 8.026 with estimated log-likelihood -118.419 
+
+----------------- 
+Step No 12 
+Best parameters 2.525 1.456 7.832 with estimated log-likelihood -123.855 
+
+----------------- 
+Step No 13 
+Best parameters 2.95 1.57 7.676 with estimated log-likelihood -134.776 
+
+----------------- 
+Step No 14 
+Best parameters 3.446 1.531 8.029 with estimated log-likelihood -124.891 
+
+----------------- 
+Step No 15 
+Best parameters 2.95 1.432 7.579 with estimated log-likelihood -127.313 
+
+----------------- 
+Step No 16 
+Best parameters 2.586 1.329 7.668 with estimated log-likelihood -121.949 
+
+----------------- 
+Step No 17 
+Best parameters 2.85 1.374 7.64 with estimated log-likelihood -122.036 
+
+----------------- 
+Step No 18 
+Best parameters 2.44 1.481 7.807 with estimated log-likelihood -113.878 
+
+----------------- 
+Step No 19 
+Best parameters 2.089 1.425 7.936 with estimated log-likelihood -122.71 
+
+----------------- 
+Step No 20 
+Best parameters 2.057 1.505 8.14 with estimated log-likelihood -116.814 
+
+----------------- 
+Step No 21 
+Best parameters 2.09 1.475 8.08 with estimated log-likelihood -121.908 
+
+----------------- 
+Step No 22 
+Best parameters 1.915 1.59 8.217 with estimated log-likelihood -134.324 
+
+----------------- 
+Step No 23 
+Best parameters 2.083 1.475 8.384 with estimated log-likelihood -119.767 
+
+----------------- 
+Step No 24 
+Best parameters 1.84 1.428 8.287 with estimated log-likelihood -123.487 
+
+----------------- 
+Step No 25 
+Best parameters 2.15 1.366 7.977 with estimated log-likelihood -120.737 
+
+----------------- 
+Step No 26 
+Best parameters 1.84 1.399 8.45 with estimated log-likelihood -132.149 
+
+----------------- 
+Step No 27 
+Best parameters 2.043 1.419 8.152 with estimated log-likelihood -118.337 
+
+*** Finished search *** 
+Seems we can not improve the likelihood anymore. 
+Calculating log-composite-likelihoods for best estimates: 
+* Parameter combination 1 of 10 
+* Parameter combination 2 of 10 
+* Parameter combination 3 of 10 
+* Parameter combination 4 of 10 
+* Parameter combination 5 of 10 
+* Parameter combination 6 of 10 
+* Parameter combination 7 of 10 
+* Parameter combination 8 of 10 
+* Parameter combination 9 of 10 
+* Parameter combination 10 of 10 
+
+*** Search with starting Point in Block 2 of 2 **** 
+----------------- 
+Step No 1 
+Best parameters 0.177 0.447 10 with estimated log-likelihood -557.291 
+
+----------------- 
+Step No 2 
+Best parameters 0.152 0.482 10 with estimated log-likelihood -523.513 
+
+----------------- 
+Step No 3 
+Best parameters 0.13 0.447 10 with estimated log-likelihood -512.441 
+
+----------------- 
+Step No 4 
+Best parameters 0.152 0.482 10 with estimated log-likelihood -537.31 
+
+----------------- 
+Step No 5 
+Best parameters 0.144 0.511 10 with estimated log-likelihood -511.721 
+
+----------------- 
+Step No 6 
+Best parameters 0.152 0.55 10 with estimated log-likelihood -503.09 
+
+----------------- 
+Step No 7 
+Best parameters 0.13 0.593 10 with estimated log-likelihood -481.465 
+
+----------------- 
+Step No 8 
+Best parameters 0.145 0.63 10 with estimated log-likelihood -481.509 
+
+----------------- 
+Step No 9 
+Best parameters 0.169 0.664 10 with estimated log-likelihood -468.683 
+
+----------------- 
+Step No 10 
+Best parameters 0.185 0.715 10 with estimated log-likelihood -473.257 
+
+----------------- 
+Step No 11 
+Best parameters 0.158 0.692 10 with estimated log-likelihood -465.085 
+
+----------------- 
+Step No 12 
+Best parameters 0.185 0.746 10 with estimated log-likelihood -476.048 
+
+----------------- 
+Step No 13 
+Best parameters 0.169 0.804 10 with estimated log-likelihood -424.751 
+
+----------------- 
+Step No 14 
+Best parameters 0.182 0.746 10 with estimated log-likelihood -483.852 
+
+----------------- 
+Step No 15 
+Best parameters 0.187 0.804 10 with estimated log-likelihood -457.941 
+
+----------------- 
+Step No 16 
+Best parameters 0.198 0.867 10 with estimated log-likelihood -434.34 
+
+----------------- 
+Step No 17 
+Best parameters 0.231 0.934 10 with estimated log-likelihood -422.25 
+
+----------------- 
+Step No 18 
+Best parameters 0.198 1.007 10 with estimated log-likelihood -413.998 
+
+----------------- 
+Step No 19 
+Best parameters 0.231 1.085 10 with estimated log-likelihood -380.777 
+
+----------------- 
+Step No 20 
+Best parameters 0.27 1.169 10 with estimated log-likelihood -366.342 
+
+----------------- 
+Step No 21 
+Best parameters 0.287 1.26 10 with estimated log-likelihood -358.605 
+
+----------------- 
+Step No 22 
+Best parameters 0.336 1.358 10 with estimated log-likelihood -345.348 
+
+----------------- 
+Step No 23 
+Best parameters 0.392 1.349 10 with estimated log-likelihood -302.269 
+
+----------------- 
+Step No 24 
+Best parameters 0.458 1.364 10 with estimated log-likelihood -296.218 
+
+----------------- 
+Step No 25 
+Best parameters 0.535 1.47 9.3 with estimated log-likelihood -269.846 
+
+----------------- 
+Step No 26 
+Best parameters 0.625 1.489 9.336 with estimated log-likelihood -243.649 
+
+----------------- 
+Step No 27 
+Best parameters 0.73 1.382 9.708 with estimated log-likelihood -218.002 
+
+----------------- 
+Step No 28 
+Best parameters 0.852 1.489 9.146 with estimated log-likelihood -199.391 
+
+----------------- 
+Step No 29 
+Best parameters 0.996 1.481 8.635 with estimated log-likelihood -179.823 
+
+----------------- 
+Step No 30 
+Best parameters 1.163 1.387 8.65 with estimated log-likelihood -157.022 
+
+----------------- 
+Step No 31 
+Best parameters 1.359 1.395 8.31 with estimated log-likelihood -144.153 
+
+----------------- 
+Step No 32 
+Best parameters 1.587 1.477 8.413 with estimated log-likelihood -125.398 
+
+----------------- 
+Step No 33 
+Best parameters 1.854 1.487 7.976 with estimated log-likelihood -120.991 
+
+----------------- 
+Step No 34 
+Best parameters 2.165 1.394 7.818 with estimated log-likelihood -121.004 
+
+----------------- 
+Step No 35 
+Best parameters 2.066 1.358 8.1 with estimated log-likelihood -127.412 
+
+----------------- 
+Step No 36 
+Best parameters 2.064 1.273 8.195 with estimated log-likelihood -118.455 
+
+----------------- 
+Step No 37 
+Best parameters 2.411 1.372 7.868 with estimated log-likelihood -114.955 
+
+----------------- 
+Step No 38 
+Best parameters 2.653 1.403 7.757 with estimated log-likelihood -124.299 
+
+----------------- 
+Step No 39 
+Best parameters 3.099 1.403 7.681 with estimated log-likelihood -112.855 
+
+----------------- 
+Step No 40 
+Best parameters 3.495 1.411 7.551 with estimated log-likelihood -124.555 
+
+----------------- 
+Step No 41 
+Best parameters 2.992 1.437 7.515 with estimated log-likelihood -117.828 
+
+----------------- 
+Step No 42 
+Best parameters 3.495 1.393 7.602 with estimated log-likelihood -116.473 
+
+----------------- 
+Step No 43 
+Best parameters 2.992 1.456 7.5 with estimated log-likelihood -122.382 
+
+----------------- 
+Step No 44 
+Best parameters 2.561 1.426 7.945 with estimated log-likelihood -115.059 
+
+----------------- 
+Step No 45 
+Best parameters 2.992 1.443 7.675 with estimated log-likelihood -119.464 
+
+----------------- 
+Step No 46 
+Best parameters 3.187 1.339 7.721 with estimated log-likelihood -119.735 
+
+----------------- 
+Step No 47 
+Best parameters 2.729 1.382 7.79 with estimated log-likelihood -116.707 
+
+----------------- 
+Step No 48 
+Best parameters 2.741 1.369 7.959 with estimated log-likelihood -120.939 
+
+*** Finished search *** 
+Seems we can not improve the likelihood anymore. 
+Calculating log-composite-likelihoods for best estimates: 
+* Parameter combination 1 of 10 
+* Parameter combination 2 of 10 
+* Parameter combination 3 of 10 
+* Parameter combination 4 of 10 
+* Parameter combination 5 of 10 
+* Parameter combination 6 of 10 
+* Parameter combination 7 of 10 
+* Parameter combination 8 of 10 
+* Parameter combination 9 of 10 
+* Parameter combination 10 of 10 
+
+
+Best log-composite-likelihood values are: 
+      log.cl block t_split_1        M    theta
+2  -111.4459     2  2.410641 1.371831 7.867962
+4  -111.5938     2  2.728575 1.381960 7.790261
+8  -113.9365     1  2.198078 1.387485 8.087472
+2  -114.3825     1  2.043415 1.418578 8.151635
+10 -115.8177     2  2.740604 1.368582 7.958856
