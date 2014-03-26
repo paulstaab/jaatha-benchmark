@@ -62,4 +62,6 @@ result <- data.frame(Version=res.version,
            Error=res.mse,
            Run.Time=res.run.time )
 
+result <- result[with(result, order(Model, Version)), ]
+
 print(result)
