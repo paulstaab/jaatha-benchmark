@@ -7,7 +7,7 @@ if (!is.na(arg[2])) {
   stopifnot(file.exists(arg[2]))
   jaatha.package <- arg[2]
 } else {
-  jaatha.package <- 'packages/jaatha_2.3.1.1.tar.gz'
+  jaatha.package <- 'packages/jaatha_2.90.2.tar.gz'
 }
 
 dir.create(path, recursive=TRUE)
@@ -24,9 +24,9 @@ dm <- dm.addMutation(dm, 1, 10)
 dm <- dm.addRecombination(dm, fixed=5)
 dm <- dm.addSymmetricMigration(dm, .1, 2)
 testJaatha:::testJaatha(dm, 3, 2, seed=12579, smoothing=FALSE, cores=c(16,2),
-                        folder=paste('runs', version, 'tt.classic', sep='/'))
+                        folder=paste('runs', version, 'tt.old', sep='/'))
 testJaatha:::testJaatha(dm, 3, 2, seed=12579, smoothing=TRUE, cores=c(16,2),
-                        folder=paste('runs', version, 'tt.smooth', sep='/'))
+                        folder=paste('runs', version, 'tt.sm', sep='/'))
 
 
 # Test the fpc sum.stat
