@@ -54,5 +54,5 @@ dm.gro <- dm.addGrowth(dm.gro, par.new=FALSE, parameter="log(1/s1)/tau", populat
 dm.gro <- dm.addGrowth(dm.gro, par.new=FALSE, parameter="log(1/s2)/tau", population=2)
 testJaatha:::testJaatha(dm.gro, 2, 1, seed=24680, smoothing=FALSE, cores=c(16, 2),
                         folder=paste('runs', version, 'gro.old', sep='/'))
-testJaatha:::testJaatha(dm.mg, 2, 1, seed=24680, smoothing=TRUE, cores=c(16, 2),
+testJaatha:::testJaatha(dm.gro, 2, 1, seed=24680, smoothing=TRUE, cores=c(16, 2),
                         folder=paste('runs', version, 'gro.sm', sep='/'))
