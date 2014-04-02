@@ -20,7 +20,8 @@ if ("compiler" %in% rownames(installed.packages())){
 res.version <- c()
 res.model   <- c()
 res.mse     <- c()
-res.run.time <- c()
+res.run.time.is <- c()
+res.run.time.rs <- c()
 
 versions <- list.dirs("runs", recursive=F)
 for (version in versions) {
@@ -46,21 +47,26 @@ for (version in versions) {
     print(par.error)
     cat('\n') 
     mse <- mean(par.error)
-    avg.run.time <- mean(run.times[, 3] + run.times[,6])
+    avg.run.time.is <- mean(run.times[, 3])
+    avg.run.time.rs <- mean(run.times[, 6])
+
     version <- strsplit(model, "/")[[1]][2]
     model <- strsplit(model, "/")[[1]][3]
 
     res.version <- c(res.version, version)
     res.model   <- c(res.model, model)
     res.mse     <- c(res.mse, mse)
-    res.run.time <- c(res.run.time, avg.run.time)
+    res.run.time.is <- c(res.run.time.is, avg.run.time.is)
+    res.run.time.rs <- c(res.run.time.rs, avg.run.time.rs)
   }
 }
 
 result <- data.frame(Version=res.version, 
            Model=res.model,
            Error=res.mse,
-           Run.Time=res.run.time )
+           Run.Time=res.run.time.is+res.run.time.rs,
+           RT.Initial=res.run.time.is,
+           RT.Refined=res.run.time.rs)
 
 result <- result[with(result, order(Model, Version)), ]
 

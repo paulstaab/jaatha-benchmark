@@ -2,10 +2,12 @@
 
 arg <- commandArgs()
 path <- '/scratch/paul/test_jaatha/lib'
+print(arg)
 
-if (!is.na(arg[2])) {
-  stopifnot(file.exists(arg[2]))
-  jaatha.package <- arg[2]
+last <- length(arg)
+if (!is.na(arg[last])) {
+  stopifnot(file.exists(arg[last]))
+  jaatha.package <- arg[last]
 } else {
   jaatha.package <- 'packages/jaatha_2.90.2.tar.gz'
 }
@@ -35,9 +37,9 @@ dm.fpc <- dm.addSpeciationEvent(dm.fpc, 0.01, 5)
 dm.fpc <- dm.addMutation(dm.fpc, 1, 10)
 dm.fpc <- dm.addRecombination(dm.fpc, 1, 10)
 dm.fpc <- dm.addSymmetricMigration(dm.fpc, .1, 2)
-# testJaatha:::testJaatha(dm.fpc, 2, 2, seed=124578, smoothing=TRUE, cores=c(8, 4),
-#                         folder=paste('runs', version, 'fpc', sep='/'),
-#                         fpc=TRUE)
+testJaatha:::testJaatha(dm.fpc, 2, 2, seed=124578, smoothing=FALSE, cores=c(16, 2),
+                         folder=paste('runs', version, 'fpc', sep='/'),
+                         fpc=TRUE)
 
 
 # Test a model with 5 parameters
