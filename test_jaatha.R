@@ -9,7 +9,7 @@ if (!is.na(arg[last])) {
   stopifnot(file.exists(arg[last]))
   jaatha.package <- arg[last]
 } else {
-  jaatha.package <- 'packages/jaatha_2.90.2.tar.gz'
+  jaatha.package <- 'packages/jaatha_2.4.tar.gz'
 }
 
 dir.create(path, recursive=TRUE)
@@ -18,6 +18,7 @@ library(jaatha, lib.loc=path)
 library(testJaatha)
 
 version <- as.character(packageVersion("jaatha"))
+set.seed(12345)
 
 # Test a simple theta/tau/migration model
 dm <- dm.createDemographicModel(c(20,25), 75)
@@ -37,9 +38,9 @@ dm.fpc <- dm.addSpeciationEvent(dm.fpc, 0.01, 5)
 dm.fpc <- dm.addMutation(dm.fpc, 1, 10)
 dm.fpc <- dm.addRecombination(dm.fpc, 1, 10)
 dm.fpc <- dm.addSymmetricMigration(dm.fpc, .1, 2)
-testJaatha:::testJaatha(dm.fpc, 2, 2, seed=124578, smoothing=FALSE, cores=c(16, 2),
-                         folder=paste('runs', version, 'fpc', sep='/'),
-                         fpc=TRUE)
+#testJaatha:::testJaatha(dm.fpc, 2, 2, seed=124578, smoothing=FALSE, cores=c(16, 2),
+#                         folder=paste('runs', version, 'fpc', sep='/'),
+#                         fpc=TRUE)
 
 
 # Test a model with 5 parameters
