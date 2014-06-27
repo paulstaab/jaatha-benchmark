@@ -11,17 +11,13 @@
 
 args <- commandArgs(TRUE)
 
-# Enable just-in-time-compiler if availible
-if ("compiler" %in% rownames(installed.packages())){
-  library("compiler")
-  invisible(compiler::enableJIT(3))
-}
-
 res.version <- c()
 res.model   <- c()
 res.mse     <- c()
 res.run.time.is <- c()
 res.run.time.rs <- c()
+
+options(digits=2)
 
 versions <- list.dirs("runs", recursive=F)
 for (version in versions) {
@@ -41,7 +37,6 @@ for (version in versions) {
     true.values <- read.table(file.true.values, header=T)
     run.times <- read.table(file.run.times, header=T)
 
-    #mse <- mean((estimates - true.values)^2)
     par.error <- apply(abs(log10(estimates/true.values)), 2, mean)
     print(model)
     print(par.error)
