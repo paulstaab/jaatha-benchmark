@@ -12,10 +12,8 @@ if (!is.na(arg[last])) {
   jaatha.package <- 'packages/jaatha_2.4-1.tar.gz'
 }
 
-dir.create(path, recursive=TRUE)
-install.packages(jaatha.package, dependencies=TRUE, lib=path) 
-library(jaatha, lib.loc=path)
 library(testJaatha)
+installPackageLocally(jaatha.package)
 
 version <- as.character(packageVersion("jaatha"))
 set.seed(12345)
