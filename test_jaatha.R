@@ -2,7 +2,6 @@
 
 arg <- commandArgs()
 path <- '/scratch/paul/test_jaatha/lib'
-print(arg)
 
 last <- length(arg)
 if (!is.na(arg[last])) {
@@ -13,10 +12,10 @@ if (!is.na(arg[last])) {
 }
 
 library(testJaatha)
-installPackageLocally(jaatha.package)
+installPackageLocally(jaatha.package, path)
 
 version <- as.character(packageVersion("jaatha"))
-set.seed(12345)
+
 
 # Test a simple theta/tau/migration model
 dm <- dm.createDemographicModel(c(20,25), 75)
@@ -29,17 +28,21 @@ testJaatha:::testJaatha(dm, 3, 2, seed=12579, smoothing=FALSE, cores=c(16,2),
 testJaatha:::testJaatha(dm, 3, 2, seed=12579, smoothing=TRUE, cores=c(16,2),
                         folder=paste('runs', version, 'tt.sm', sep='/'))
 
-
 # Test the fpc sum.stat
 dm.fpc <- dm.createDemographicModel(c(20,25), 100)
 dm.fpc <- dm.addSpeciationEvent(dm.fpc, 0.01, 5)
 dm.fpc <- dm.addMutation(dm.fpc, 1, 10)
 dm.fpc <- dm.addRecombination(dm.fpc, 1, 10)
 dm.fpc <- dm.addSymmetricMigration(dm.fpc, .1, 2)
-testJaatha:::testJaatha(dm.fpc, 2, 2, seed=124578, smoothing=FALSE, cores=c(16, 2),
+testJaatha:::testJaatha(dm.fpc, 2, 3, seed=124578, smoothing=FALSE, cores=c(16, 2),
                          folder=paste('runs', version, 'fpc', sep='/'),
                          fpc=TRUE)
 
+# Test a finite sites model
+dm.fs <- dm.setMutationModel(dm.fpc, "HKY", c(0.2, 0.2, 0.3, 0.3), 2)
+testJaatha:::testJaatha(dm.fs, 2, 3, seed=124578, smoothing=FALSE, cores=c(16, 2),
+                         folder=paste('runs', version, 'fpc', sep='/'),
+                         fpc=TRUE)
 
 # Test a model with 5 parameters
 dm.gro <- dm.createDemographicModel(c(24,25), 100, 1000)
@@ -57,3 +60,4 @@ testJaatha:::testJaatha(dm.gro, 2, 1, seed=24680, smoothing=FALSE, cores=c(16, 2
                         folder=paste('runs', version, 'gro.old', sep='/'))
 testJaatha:::testJaatha(dm.gro, 2, 1, seed=24680, smoothing=TRUE, cores=c(16, 2),
                         folder=paste('runs', version, 'gro.sm', sep='/'))
+
