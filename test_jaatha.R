@@ -41,7 +41,7 @@ testJaatha:::testJaatha(dm.fpc, 2, 3, seed=124578, smoothing=FALSE, cores=c(16, 
 # Test a finite sites model
 dm.fs <- dm.setMutationModel(dm.fpc, "HKY", c(0.2, 0.2, 0.3, 0.3), 2)
 testJaatha:::testJaatha(dm.fs, 2, 3, seed=124578, smoothing=FALSE, cores=c(16, 2),
-                         folder=paste('runs', version, 'fpc', sep='/'),
+                         folder=paste('runs', version, 'fs', sep='/'),
                          fpc=TRUE)
 
 # Test a model with 5 parameters
