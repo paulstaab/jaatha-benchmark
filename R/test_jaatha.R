@@ -1,7 +1,8 @@
-#!/usr/bin/Rscript --vanilla
+#!/usr/bin/Rscript --no-save --no-site-file --no-init-file
 
 arg <- commandArgs()
 path <- '/scratch/paul/test_jaatha/lib'
+cat("TEMPDIR: ", tempdir(), "\n")
 
 last <- length(arg)
 if (!is.na(arg[last])) {
