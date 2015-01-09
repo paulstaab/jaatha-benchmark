@@ -40,9 +40,8 @@ testJaatha:::testJaatha(dm.fpc, 2, 3, seed=124578, smoothing=FALSE, cores=c(16, 
                          folder=paste('runs', version, 'fpc', sep='/'))
 
 # Test a finite sites model
-# currently broken
 dm.fs <- dm.setMutationModel(dm.fpc, "HKY", c(0.2, 0.2, 0.3, 0.3), 2)
-dm.fs <- dm.addOutgroup(dm.fs, '2*tau', 2)
+dm.fs <- dm.addOutgroup(dm.fs, '2*t_split_1', 2)
 testJaatha:::testJaatha(dm.fs, 2, 3, seed=124578, smoothing=FALSE, cores=c(16, 2),
                         folder=paste('runs', version, 'fs', sep='/'))
 
