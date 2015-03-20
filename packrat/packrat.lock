@@ -1,6 +1,6 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.3
-RVersion: 3.1.3
+RVersion: 3.1.1
 Repos: CRAN=http://cran.rstudio.com/
 
 Package: PopGenome
@@ -52,13 +52,13 @@ Hash: 9d92cc5ac60123fdb7b0daa3ae83bf99
 
 Package: coalsimr
 Source: github
-Version: 0.0.9026
-Hash: 0c1ff5f11e76b3920093ed3b560ac76997a696db
+Version: 0.0.9027
+Hash: fd8808fce517d7449b4cb3a757fe812f20ec520e
 Requires: R6, Rcpp, assertthat, phyclust, scrm, settings
 GithubRepo: coalsimr
 GithubUsername: paulstaab
 GithubRef: master
-GithubSha1: 0c1ff5f11e76b3920093ed3b560ac76997a696db
+GithubSha1: fd8808fce517d7449b4cb3a757fe812f20ec520e
 
 Package: codetools
 Source: CRAN
@@ -114,13 +114,13 @@ Hash: b5320a58712688d5b18c207cf256ef3f
 
 Package: jaatha
 Source: github
-Version: 2.99.0.9026
-Hash: 3df4ce509b2fde47a5b981ad2e24a2cf57feef60
+Version: 2.99.0.9027
+Hash: f6056de58d2c36ca55d9c40ddb582786d02632d6
 Requires: PopGenome, R6, assertthat, coalsimr, reshape2
 GithubRepo: jaatha
 GithubUsername: paulstaab
 GithubRef: master
-GithubSha1: 3df4ce509b2fde47a5b981ad2e24a2cf57feef60
+GithubSha1: f6056de58d2c36ca55d9c40ddb582786d02632d6
 
 Package: jsonlite
 Source: CRAN
