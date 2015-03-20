@@ -5,8 +5,7 @@ library(coalsimr)
 library(testJaatha)
 library(devtools) # to keep it in packrat
 
-version <- paste0(packageVersion("jaatha"), "_",
-                  packageVersion("coalsimr"))
+version <- packageVersion("jaatha")
 
 # Test a simple theta/tau/migration model
 model <- coal_model(c(20,25), 75) +
