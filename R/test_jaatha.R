@@ -1,8 +1,9 @@
-#!/usr/bin/Rscript --no-save --no-site-file --no-init-file
+#!/usr/bin/Rscript --no-save
 
 library(jaatha)
 library(coalsimr)
 library(testJaatha)
+library(devtools) # to keep it in packrat
 
 version <- paste0(packageVersion("jaatha"), "_",
                   packageVersion("coalsimr"))
@@ -15,7 +16,8 @@ model <- coal_model(c(20,25), 75) +
   feat_migration(par_range("m", .1, 2), symmetric = TRUE) +
   sumstat_jsfs()
 
-testJaatha(model, 3, 2, seed=12579, smoothing=FALSE, cores=c(16, 2),
+test_data <- createTestData(model, 3, 2, cores=32)
+testJaatha(model, test_data = test_data, cores=c(16, 2),
            folder=file.path('runs', version, 'tt.old'))
 testJaatha(model, 3, 2, seed=12579, smoothing=TRUE, cores=c(16, 2),
            folder=file.path('runs', version, 'tt.sm'))
