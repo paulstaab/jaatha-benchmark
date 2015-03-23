@@ -32,8 +32,8 @@ model_fpc <- coal_model(c(20,25), 100) +
   sumstat_four_gamete("fgc1", 1) +
   sumstat_four_gamete("fgc2", 2)
 
-testJaatha(model_fpc, 3, 2, seed=2537, smoothing=FALSE, cores=c(16, 2),
-           folder=file.path('runs', version, 'tt.old'))
+testJaatha(model_fpc, 2, 2, seed=2537, smoothing=FALSE, cores=c(16, 2),
+           folder=file.path('runs', version, 'fpc'))
 
 
 # --- Test a finite sites model -----------------------------------------------
@@ -48,7 +48,7 @@ model_fs <- coal_model(c(15, 20, 2), 50) +
   feat_pop_merge(par_expr("2*tau"), 3, 1) +
   sumstat_jsfs()
 
-testJaatha(model_fs, 2, 3, seed=124578, smoothing=FALSE, cores=c(16, 2),
+testJaatha(model_fs, 2, 4, seed=124578, smoothing=FALSE, cores=c(16, 2),
            folder=file.path('runs', version, 'fs'))
 
 
