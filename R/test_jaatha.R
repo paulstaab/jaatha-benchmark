@@ -57,16 +57,16 @@ model_6par <- coal_model(c(15, 20), 500, 1000) +
   feat_mutation(par_range('theta', .1, 10)) +
   feat_migration(par_range('m12', 0.01, 5), 1, 2) +
   feat_migration(par_range('m21', 0.01, 5), 2, 1) +
-  feat_size_change(par_range('q', 0.01, 10), population = 2, at.time = 0) +
+  feat_size_change(par_range('q', 0.01, 10), population = 2, time = 0) +
   par_range("s2", 0.001, 2) +
-  feat_growth(par_expr(log(1)/tau), population = 1, at.time = 0) +
-  feat_growth(par_expr(log(q/s2)/tau), population = 2, at.time = 0) +
-  feat_size_change(par_expr(1+s2), population = 1, at.time = par_expr(tau)) +
+  feat_growth(par_expr(log(1)/tau), population = 1, time = 0) +
+  feat_growth(par_expr(log(q/s2)/tau), population = 2, time = 0) +
+  feat_size_change(par_expr(1 + s2), population = 1, time = par_expr(tau)) +
   feat_pop_merge(par_range('tau', 0.001, 5), 2, 1) +
   feat_recombination(par_const(5)) +
   sumstat_jsfs()
 
-testJaatha(model_6par, 2, 1, seed=24680, smoothing=FALSE, cores=c(16, 2),
-           folder=file.path('runs', version, '6par'))
+testJaatha(model_6par, 2, 1, seed = 24680, smoothing = FALSE, cores = c(16, 2),
+           folder = file.path('runs', version, '6par'))
 #testJaatha(model_6par, 2, 1, seed=24680, smoothing=TRUE, cores=c(16, 2),
 #           folder=file.path('runs', version, '6par_smoothing'))
