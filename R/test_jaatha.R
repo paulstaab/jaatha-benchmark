@@ -1,7 +1,7 @@
 #!/usr/bin/Rscript --no-save
 
 library(jaatha)
-library(coalsimr)
+library(coala)
 library(testJaatha)
 library(devtools) # to keep it in packrat
 
@@ -18,8 +18,8 @@ model <- coal_model(c(20,25), 75) +
 test_data <- createTestData(model, 3, 2, cores=32)
 testJaatha(model, test_data = test_data, cores=c(16, 2),
            folder=file.path('runs', version, 'tt.old'))
-testJaatha(model, 3, 2, seed=12579, smoothing=TRUE, cores=c(16, 2),
-           folder=file.path('runs', version, 'tt.sm'))
+#testJaatha(model, 3, 2, seed=12579, smoothing=TRUE, cores=c(16, 2),
+#           folder=file.path('runs', version, 'tt.sm'))
 
 
 # --- Test the fpc sum.stat ---------------------------------------------------
@@ -66,7 +66,7 @@ model_6par <- coal_model(c(15, 20), 500, 1000) +
   feat_recombination(par_const(5)) +
   sumstat_jsfs()
 
-testJaatha:::testJaatha(model_6par, 2, 1, seed=24680, smoothing=FALSE, cores=c(16, 2),
-                       folder=file.path('runs', version, '6par'))
-testJaatha:::testJaatha(model_6par, 2, 1, seed=24680, smoothing=TRUE, cores=c(16, 2),
-                        folder=file.path('runs', version, '6par_smoothing'))
+testJaatha(model_6par, 2, 1, seed=24680, smoothing=FALSE, cores=c(16, 2),
+           folder=file.path('runs', version, '6par'))
+#testJaatha(model_6par, 2, 1, seed=24680, smoothing=TRUE, cores=c(16, 2),
+#           folder=file.path('runs', version, '6par_smoothing'))
