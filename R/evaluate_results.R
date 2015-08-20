@@ -9,13 +9,10 @@
 # Licence:  GPLv3 or later
 #
 
-args <- commandArgs(TRUE)
-
 res.version <- c()
 res.model   <- c()
 res.mse     <- c()
-res.run.time.is <- c()
-res.run.time.rs <- c()
+res.run.time <- c()
 
 options(digits=2)
 
@@ -42,8 +39,11 @@ for (version in versions) {
     print(par.error)
     cat('\n') 
     mse <- mean(par.error)
-    avg.run.time.is <- mean(run.times[, 3])
-    avg.run.time.rs <- mean(run.times[, 6])
+    if (ncol(run.times) == 6) {
+      avg_run_time <- mean(run.times[, 3]) +  mean(run.times[, 6])
+    } else {
+      avg_run_time <- mean(run.times[, 3])
+    }
 
     version <- strsplit(model, "/")[[1]][2]
     model <- strsplit(model, "/")[[1]][3]
@@ -51,17 +51,14 @@ for (version in versions) {
     res.version <- c(res.version, version)
     res.model   <- c(res.model, model)
     res.mse     <- c(res.mse, mse)
-    res.run.time.is <- c(res.run.time.is, avg.run.time.is)
-    res.run.time.rs <- c(res.run.time.rs, avg.run.time.rs)
+    res.run.time <- c(res.run.time, avg_run_time)
   }
 }
 
-result <- data.frame(Version=res.version, 
-           Model=res.model,
-           Error=res.mse,
-           Run.Time=res.run.time.is+res.run.time.rs,
-           RT.Initial=res.run.time.is,
-           RT.Refined=res.run.time.rs)
+result <- data.frame(Version = res.version, 
+           Model = res.model,
+           Error = res.mse,
+           Run.Time = res.run.time)
 
 result <- result[with(result, order(Model, Version)), ]
 
