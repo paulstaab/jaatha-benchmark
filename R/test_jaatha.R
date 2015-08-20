@@ -15,11 +15,16 @@ model <- coal_model(c(20,25), 75) +
   feat_migration(par_range("m", .1, 2), symmetric = TRUE) +
   sumstat_jsfs()
 
+set.seed(124)
 test_data <- createTestData(model, 3, 2, cores=32)
-testJaatha(model, test_data = test_data, cores=c(16, 2),
-           folder=file.path('runs', version, 'tt.old'))
-#testJaatha(model, 3, 2, seed=12579, smoothing=TRUE, cores=c(16, 2),
-#           folder=file.path('runs', version, 'tt.sm'))
+testJaatha(model, test_data = test_data, seed = 125, cores=c(16, 2),
+           folder=file.path('runs', version, 'tt_is'))
+testJaatha(model, test_data = test_data, seed = 126, cores=c(16, 2),
+           init_method = "zoom-in",
+           folder=file.path('runs', version, 'tt_zoom'))
+testJaatha(model, test_data = test_data, seed = 127, cores=c(16, 2),
+           init_method = "middle",
+           folder=file.path('runs', version, 'tt_middle'))
 
 
 # --- Test the fpc sum.stat ---------------------------------------------------
@@ -32,7 +37,7 @@ model_fpc <- coal_model(c(20,25), 100) +
   sumstat_four_gamete("fgc1", 1) +
   sumstat_four_gamete("fgc2", 2)
 
-testJaatha(model_fpc, 2, 2, seed=2537, smoothing=FALSE, cores=c(16, 2),
+testJaatha(model_fpc, 2, 2, seed=2537, cores=c(16, 2),
            folder=file.path('runs', version, 'fpc'))
 
 
@@ -48,7 +53,7 @@ model_fs <- coal_model(c(15, 20, 2), 50) +
   feat_pop_merge(par_expr("2*tau"), 3, 1) +
   sumstat_jsfs()
 
-testJaatha(model_fs, 2, 4, seed=124578, smoothing=FALSE, cores=c(16, 2),
+testJaatha(model_fs, 2, 4, seed=124578, cores=c(16, 2),
            folder=file.path('runs', version, 'fs'))
 
 
@@ -66,7 +71,7 @@ model_6par <- coal_model(c(15, 20), 500, 1000) +
   feat_recombination(par_const(5)) +
   sumstat_jsfs()
 
-testJaatha(model_6par, 2, 1, seed = 24680, smoothing = FALSE, cores = c(16, 2),
+testJaatha(model_6par, 2, 1, seed = 24680, cores = c(16, 2),
            folder = file.path('runs', version, '6par'))
 #testJaatha(model_6par, 2, 1, seed=24680, smoothing=TRUE, cores=c(16, 2),
 #           folder=file.path('runs', version, '6par_smoothing'))
