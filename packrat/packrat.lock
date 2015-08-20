@@ -1,6 +1,6 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.4
-RVersion: 3.2.1
+RVersion: 3.1.1
 Repos: CRAN=http://cran.rstudio.com/
 
 Package: BH
@@ -29,6 +29,11 @@ Source: CRAN
 Version: 0.5.400.2.0
 Hash: 7584b3722d0057392211c8b207206b64
 Requires: Rcpp
+
+Package: ape
+Source: CRAN
+Version: 3.3
+Hash: 7a1f5add39f0c6209dd3782c8222d07a
 
 Package: assertthat
 Source: CRAN
@@ -132,13 +137,13 @@ Hash: 5b4df529141f993389b8fb24d56fe531
 
 Package: jaatha
 Source: github
-Version: 2.99.0.9201
-Hash: 9865eb2bf857b4b5f1866e730496b0a0
+Version: 2.99.0.9202
+Hash: 1c2775e9ce16c95d596b9c7320f9b038
 Requires: R6, assertthat, reshape2
 GithubRepo: jaatha
 GithubUsername: statgenlmu
-GithubRef: improve_0_sumstats
-GithubSha1: 462d6e0a1bc95d2ea6341cb5d423719b4de533aa
+GithubRef: fix/issue_72
+GithubSha1: 778310522d5a3f6390a8a95b634dd3329afa4b92
 
 Package: jsonlite
 Source: CRAN
@@ -165,6 +170,12 @@ Package: packrat
 Source: CRAN
 Version: 0.4.4
 Hash: aed7d17407538df551a57caf6289c8bf
+
+Package: phyclust
+Source: CRAN
+Version: 0.1-15
+Hash: e59c18b0eff2d9fae3b34a4c184b3607
+Requires: ape
 
 Package: plyr
 Source: CRAN
@@ -220,13 +231,13 @@ Requires: magrittr, stringi
 
 Package: testJaatha
 Source: github
-Version: 0.2.0
-Hash: 996e16ab7281f253fb60dc04e882a256
+Version: 0.2.1
+Hash: 2e0289cd0f7f6e9025b08b6f0a55acf3
 Requires: coala, doMC, evaluate, foreach, jaatha
 GithubRepo: jaatha-benchmark-package
 GithubUsername: paulstaab
 GithubRef: master
-GithubSha1: ee55c35386f416131473b26620caa57275c8c530
+GithubSha1: cb018aa4be06cfcd43318a16404726c1e6e38a43
 
 Package: whisker
 Source: CRAN
