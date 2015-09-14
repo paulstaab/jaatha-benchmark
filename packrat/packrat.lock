@@ -137,13 +137,13 @@ Hash: 5b4df529141f993389b8fb24d56fe531
 
 Package: jaatha
 Source: github
-Version: 2.99.0.9202
-Hash: 1c2775e9ce16c95d596b9c7320f9b038
+Version: 2.99.0.9213
+Hash: c2020bd345f960e902f6c297624da1f3
 Requires: R6, assertthat, reshape2
 GithubRepo: jaatha
 GithubUsername: statgenlmu
-GithubRef: fix/issue_72
-GithubSha1: 778310522d5a3f6390a8a95b634dd3329afa4b92
+GithubRef: feature/ignore_outer_block
+GithubSha1: cb9da5fde14873ed979b0b90354abc2b3e31fce9
 
 Package: jsonlite
 Source: CRAN

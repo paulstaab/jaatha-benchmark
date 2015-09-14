@@ -16,7 +16,7 @@ model <- coal_model(c(20, 25), 75) +
   sumstat_jsfs()
 
 set.seed(124)
-test_data <- createTestData(model, 3, 2, cores=32)
+test_data <- createTestData(model, 3, 4, cores=32)
 testJaatha(model, test_data = test_data, seed = 125, cores=c(16, 2),
            folder=file.path('runs', version, 'tt_is'))
 testJaatha(model, test_data = test_data, seed = 126, cores=c(16, 2),

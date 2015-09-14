@@ -33,6 +33,10 @@ for (version in versions) {
     estimates <- read.table(file.est, header=T)
     true.values <- read.table(file.true.values, header=T)
     run.times <- read.table(file.run.times, header=T)
+    if (any(is.na(estimates))) {
+      warning(version, " ", model, ": Some results are missing")
+      next()
+    }
 
     par.error <- apply(abs(log10(estimates/true.values)), 2, mean)
     print(model)
