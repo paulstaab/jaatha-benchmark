@@ -1,7 +1,7 @@
 PackratFormat: 1.4
-PackratVersion: 0.4.4
-RVersion: 3.1.1
-Repos: CRAN=http://cran.rstudio.com/
+PackratVersion: 0.4.3
+RVersion: 3.2.2
+Repos: CRAN=https://cran.rstudio.com/
 
 Package: BH
 Source: CRAN
@@ -12,12 +12,6 @@ Package: R6
 Source: CRAN
 Version: 2.1.1
 Hash: 20a88b2c9c84aecff2702789a4d102f5
-
-Package: RCurl
-Source: CRAN
-Version: 1.95-4.7
-Hash: 7756ed9df5d79ca87bc9e93f85d89b87
-Requires: bitops
 
 Package: Rcpp
 Source: CRAN
@@ -60,12 +54,12 @@ Package: coala
 Source: CRAN
 Version: 0.1.1
 Hash: 601c1354a71935cfb5611fd234bda988
-Requires: R6, Rcpp, RcppArmadillo, assertthat, rehh, scrm
+Requires: R6, Rcpp, assertthat, RcppArmadillo, scrm, rehh
 
 Package: codetools
 Source: CRAN
 Version: 0.2-14
-Hash: 127e7e68dfa21d3f17c022df1e727d0a
+Hash: ce8adca31e4280b6ba1760a89d859ee5
 
 Package: curl
 Source: CRAN
@@ -76,8 +70,8 @@ Package: devtools
 Source: CRAN
 Version: 1.8.0
 Hash: 908d926757f793f385049f4f140e7313
-Requires: RCurl, digest, evaluate, git2r, httr, jsonlite, memoise,
-    roxygen2, rstudioapi, rversions, whisker
+Requires: curl, digest, git2r, jsonlite, rstudioapi, whisker, memoise,
+    rversions, evaluate, httr, roxygen2
 
 Package: digest
 Source: CRAN
@@ -88,7 +82,7 @@ Package: doMC
 Source: CRAN
 Version: 1.3.3
 Hash: adbf3aca4287281a21ec4afbf023b38e
-Requires: foreach, iterators
+Requires: iterators, foreach
 
 Package: evaluate
 Source: CRAN
@@ -100,7 +94,7 @@ Package: foreach
 Source: CRAN
 Version: 1.4.2
 Hash: c306afbbf5cc2608170bc7205bf58bea
-Requires: codetools, iterators
+Requires: iterators
 
 Package: gdata
 Source: CRAN
@@ -117,7 +111,7 @@ Package: gplots
 Source: CRAN
 Version: 2.17.0
 Hash: ea8a8c502ae5e82f9978ddb93eb7cbd9
-Requires: caTools, gdata, gtools
+Requires: gtools, caTools, gdata
 
 Package: gtools
 Source: CRAN
@@ -168,8 +162,8 @@ Hash: 629133973445ad75e5438a2bb6b05c17
 
 Package: packrat
 Source: CRAN
-Version: 0.4.4
-Hash: aed7d17407538df551a57caf6289c8bf
+Version: 0.4.3
+Hash: 16c72d5c802629fae5a4abca901e0199
 
 Package: phyclust
 Source: CRAN
@@ -199,7 +193,7 @@ Package: roxygen2
 Source: CRAN
 Version: 4.1.1
 Hash: 5dce64dda925a35cbbf1c1072dc1eed7
-Requires: Rcpp, brew, digest, stringr
+Requires: Rcpp, brew, digest, stringi, stringr
 
 Package: rstudioapi
 Source: CRAN
@@ -233,7 +227,7 @@ Package: testJaatha
 Source: github
 Version: 0.2.1
 Hash: 2e0289cd0f7f6e9025b08b6f0a55acf3
-Requires: coala, doMC, evaluate, foreach, jaatha
+Requires: foreach, doMC, evaluate, jaatha, coala
 GithubRepo: jaatha-benchmark-package
 GithubUsername: paulstaab
 GithubRef: master
