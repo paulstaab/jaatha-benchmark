@@ -7,6 +7,20 @@ library(devtools) # to keep it in packrat
 
 version <- packageVersion("jaatha")
 
+
+# --- Test a tree population model ---------------------------------------------
+model_3pop <- coal_model(c(15, 15, 15), 200) +
+  feat_pop_merge(par_range("tau21", 0.01, 5), 2, 1) +
+  feat_pop_merge(par_range("tau31", 0.01, 5), 3, 1) +
+  feat_mutation(par_range("theta", 1, 10)) +
+  feat_recombination(5) +
+  feat_migration(par_range("m", .1, 2), symmetric = TRUE) +
+  sumstat_jsfs(population = 1:3)
+
+testJaatha(model_3pop, 2, 2, seed = 12542, cores = c(16, 2),
+           folder = file.path('runs', version, '3pop'))
+
+
 # --- Test a simple theta/tau/migration model ---------------------------------
 model <- coal_model(c(20, 25), 75) +
   feat_pop_merge(par_range("tau", 0.01, 5), 2, 1) +
