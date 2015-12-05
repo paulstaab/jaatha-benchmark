@@ -60,9 +60,14 @@ data_runtime <- foreach(model=unlist(runs), .combine=rbind) %do% {
   version_name <- strsplit(model, "/")[[1]][2]
   model_name <- strsplit(model, "/")[[1]][3]
   
+  runtimes <- run.times[ , 3]
+  if (ncol(run.times) == 10) {
+    runtimes <- runtimes + run.times[ , 8]
+  }
+    
   data.frame(version=version_name,
              model=model_name,
-             run.time=run.times[,3] + run.times[,6])
+             run.time=runtimes)
 }
 
 save(data_acc, data_runtime, file='data_processed/acc_and_runtime.Rda')
