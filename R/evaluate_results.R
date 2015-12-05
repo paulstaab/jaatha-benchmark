@@ -39,9 +39,6 @@ for (version in versions) {
     }
 
     par.error <- apply(abs(log10(estimates/true.values)), 2, mean)
-    print(model)
-    print(par.error)
-    cat('\n') 
     mse <- mean(par.error)
     if (ncol(run.times) == 6) {
       avg_run_time <- mean(run.times[, 3]) +  mean(run.times[, 6])

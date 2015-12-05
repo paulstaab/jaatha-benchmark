@@ -1,7 +1,7 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.4
 RVersion: 3.1.1
-Repos: CRAN=https://cran.rstudio.com/
+Repos: CRAN=http://cran.rstudio.com/
 
 Package: BH
 Source: CRAN
@@ -21,13 +21,13 @@ Requires: bitops
 
 Package: Rcpp
 Source: CRAN
-Version: 0.12.1
-Hash: 02ad87c166e4a92976052106e3826893
+Version: 0.12.2
+Hash: 1928c2b7372e3f033217335f3fad25a3
 
 Package: RcppArmadillo
 Source: CRAN
-Version: 0.5.500.2.0
-Hash: ba7fea075432fec8b9a090b57cbe11a9
+Version: 0.6.300.2.0
+Hash: cebe0c8a29334a4b4a4e9ef8e11aaa94
 Requires: Rcpp
 
 Package: ape
@@ -59,7 +59,7 @@ Requires: bitops
 Package: coala
 Source: github
 Version: 0.2.2.9000
-Hash: 8637111413b2e38f9bfd23980db1b614
+Hash: 6aeb33df03014e539e999ada2d1ec26d
 Requires: R6, Rcpp, RcppArmadillo, assertthat, rehh, scrm
 GithubRepo: coala
 GithubUsername: statgenlmu
@@ -90,20 +90,20 @@ Hash: de202f956596a476d09304e3a2ebf1e5
 
 Package: doMC
 Source: CRAN
-Version: 1.3.3
-Hash: adbf3aca4287281a21ec4afbf023b38e
+Version: 1.3.4
+Hash: 0a0a9baf431dc834116c7d94b8bbd735
 Requires: foreach, iterators
 
 Package: evaluate
 Source: CRAN
-Version: 0.7.2
-Hash: b659556abe45f9a377207945b95857e1
+Version: 0.8
+Hash: aac00bd789bac10970b50e3b7e0cab04
 Requires: stringr
 
 Package: foreach
 Source: CRAN
-Version: 1.4.2
-Hash: c306afbbf5cc2608170bc7205bf58bea
+Version: 1.4.3
+Hash: cd53ef4cf29dc59ce3f8c5c1af735fd1
 Requires: codetools, iterators
 
 Package: gdata
@@ -136,18 +136,14 @@ Requires: R6, curl, digest, jsonlite, mime, stringr
 
 Package: iterators
 Source: CRAN
-Version: 1.0.7
-Hash: 5b4df529141f993389b8fb24d56fe531
+Version: 1.0.8
+Hash: 488b93c2a4166db0d15f1e8d882cb1d4
 
 Package: jaatha
-Source: github
-Version: 2.99.0.9221
-Hash: 75698be256468cea764e8e1785b214ab
-Requires: R6, assertthat, reshape2
-GithubRepo: jaatha
-GithubUsername: statgenlmu
-GithubRef: master
-GithubSha1: edb9a4208466b5bf8a6a418415ecc9d49803295e
+Source: CRAN
+Version: 3.0.0
+Hash: 588ab9672e1af2fd6c6029e224f4ca58
+Requires: R6, assertthat
 
 Package: jsonlite
 Source: CRAN
@@ -184,7 +180,7 @@ Requires: ape
 Package: plyr
 Source: CRAN
 Version: 1.8.3
-Hash: 52c8f33727f85cf27dec392f28d94853
+Hash: 5cf4672c5940e265f2602d5d806d303d
 Requires: Rcpp
 
 Package: rehh
@@ -196,13 +192,13 @@ Requires: gplots
 Package: reshape2
 Source: CRAN
 Version: 1.4.1
-Hash: 7a0744bdaff4aeef700d31f26a31e9e1
+Hash: 193899598711fc9776f383bbdf266118
 Requires: Rcpp, plyr, stringr
 
 Package: roxygen2
 Source: CRAN
 Version: 4.1.1
-Hash: aacbdc7412da959c352c3c0dd5e16b13
+Hash: 540e4148f6a12d3242e8420c278b5830
 Requires: Rcpp, brew, digest, stringr
 
 Package: rstudioapi
@@ -219,13 +215,13 @@ Requires: curl, xml2
 Package: scrm
 Source: CRAN
 Version: 1.6.0-2
-Hash: eaa2db5e47567b3560077b85feac2a4b
+Hash: 5e403d11edb26c2aa2e747d28de5b099
 Requires: Rcpp
 
 Package: stringi
 Source: CRAN
-Version: 0.5-5
-Hash: e7c67668a472e26e0c95bc8fa9049198
+Version: 1.0-1
+Hash: cf342bc407bd5daec77ed1009d5244e1
 
 Package: stringr
 Source: CRAN
@@ -235,13 +231,13 @@ Requires: magrittr, stringi
 
 Package: testJaatha
 Source: github
-Version: 0.2.4
-Hash: 2227fe3275622d4b09621e36ff219d28
+Version: 0.2.5
+Hash: 67cb3d6f9e20aee4a80d2a3e920b2501
 Requires: coala, doMC, evaluate, foreach, jaatha
 GithubRepo: jaatha-benchmark-package
 GithubUsername: paulstaab
 GithubRef: master
-GithubSha1: 596f1b46dd8a28c81d2b204361699574328fdfb3
+GithubSha1: 2bedc1c9dd9634510f59642f2e2cda894f88248c
 
 Package: whisker
 Source: CRAN
@@ -251,5 +247,5 @@ Hash: 803d662762e532705c2c066a82d066e7
 Package: xml2
 Source: CRAN
 Version: 0.1.1
-Hash: cb6c70d49c2384012db87851719d616a
+Hash: 573c497da58fecffa5fec0c9171f3f8a
 Requires: BH, Rcpp
