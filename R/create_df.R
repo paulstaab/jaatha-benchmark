@@ -61,8 +61,8 @@ data_runtime <- foreach(model=unlist(runs), .combine=rbind) %do% {
   model_name <- strsplit(model, "/")[[1]][3]
   
   runtimes <- run.times[ , 3]
-  if (ncol(run.times) == 10) {
-    runtimes <- runtimes + run.times[ , 8]
+  if (ncol(run.times) == 6) {
+    runtimes <- runtimes + run.times[ , 6]
   }
     
   data.frame(version=version_name,
