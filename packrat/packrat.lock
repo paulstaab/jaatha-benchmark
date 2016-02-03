@@ -57,14 +57,10 @@ Hash: 97cb6f6293cd18d17df77a6383cc6763
 Requires: bitops
 
 Package: coala
-Source: github
-Version: 0.2.2.9000
-Hash: 6aeb33df03014e539e999ada2d1ec26d
+Source: CRAN
+Version: 0.3.0
+Hash: 17e5f433095434d93f5126df7d3e2703
 Requires: R6, Rcpp, RcppArmadillo, assertthat, rehh, scrm
-GithubRepo: coala
-GithubUsername: statgenlmu
-GithubRef: master
-GithubSha1: 43d182a4502d995e2b93e7f37921381adef93d46
 
 Package: codetools
 Source: CRAN
@@ -141,8 +137,8 @@ Hash: 488b93c2a4166db0d15f1e8d882cb1d4
 
 Package: jaatha
 Source: CRAN
-Version: 3.0.0
-Hash: 588ab9672e1af2fd6c6029e224f4ca58
+Version: 3.1.0
+Hash: 471811c12320e1f439ae28d4548b76e4
 Requires: R6, assertthat
 
 Package: jsonlite
